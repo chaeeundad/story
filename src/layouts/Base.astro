@@ -1,6 +1,34 @@
 ---
 import '../styles/global.css';
-const {title='mino. — 아직 생각 중입니다.',description='기술과 과학, 인간과 사회에 관해 질문하고 기록합니다.'}=Astro.props;
+const {
+  title='mino. — 아직 생각 중입니다.',
+  description='기술과 과학, 역사와 사회에 대한 질문을 기록하는 개인 서재. AI와의 대화에서 출발한 생각들을 긴 글로 정리합니다.',
+  type='website',
+  publishedTime,
+  tags=[],
+  author='mino'
+}=Astro.props;
+const canonical = new URL(Astro.url.pathname, 'https://mino.co.kr').href;
+const jsonLd = type==='article' ? {
+ '@context':'https://schema.org',
+ '@type':'BlogPosting',
+ headline:title.replace(/ — mino\.$/,''),
+ description,
+ mainEntityOfPage:canonical,
+ url:canonical,
+ inLanguage:'ko-KR',
+ datePublished: publishedTime,
+ author:{'@type':'Person',name:author,url:'https://mino.co.kr/about/'},
+ publisher:{'@type':'Person',name:'mino',url:'https://mino.co.kr/about/'},
+ keywords: tags.join(', ')
+} : {
+ '@context':'https://schema.org',
+ '@type':'WebSite',
+ name:'mino.',
+ url:'https://mino.co.kr/',
+ inLanguage:'ko-KR',
+ description:'기술과 과학, 역사와 사회에 대한 질문을 기록하는 개인 서재.'
+};
 ---
 <!doctype html>
 <html lang="ko">
@@ -8,9 +36,20 @@ const {title='mino. — 아직 생각 중입니다.',description='기술과 과�
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="description" content={description}/>
-<link rel="canonical" href={new URL(Astro.url.pathname,Astro.site)}/>
+<meta name="robots" content="index, follow, max-image-preview:large"/>
+<link rel="canonical" href={canonical}/>
+<meta property="og:locale" content="ko_KR"/>
+<meta property="og:site_name" content="mino."/>
+<meta property="og:type" content={type}/>
+<meta property="og:url" content={canonical}/>
 <meta property="og:title" content={title}/>
 <meta property="og:description" content={description}/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content={title}/>
+<meta name="twitter:description" content={description}/>
+{type==='article' && publishedTime && <meta property="article:published_time" content={publishedTime}/>}
+{type==='article' && tags.map(tag=><meta property="article:tag" content={tag}/>)}
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd).replace(/</g,'\\u003c')} />
 <title>{title}</title>
 <!-- Cloudflare Web Analytics --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"c004b7eb0d0347e590b5224c76abcd5b"}'></script><!-- End Cloudflare Web Analytics -->
 </head>
