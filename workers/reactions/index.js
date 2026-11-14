@@ -44,7 +44,8 @@ async function readBody(request) {
 }
 async function handle(request, env) {
   const url = new URL(request.url);
-  if (url.pathname !== '/api/reactions' || url.searchParams.get('slug') !== 'why-we-work') {
+  const slug = url.searchParams.get('slug');
+  if (url.pathname !== '/api/reactions' || !['why-we-work', 'why-children-study'].includes(slug)) {
     return json({error: 'not_found'}, 404);
   }
   if (!['GET', 'PUT'].includes(request.method)) return json({error: 'method_not_allowed'}, 405, {Allow: 'GET, PUT'});
@@ -75,9 +76,9 @@ async function handle(request, env) {
       ? db.prepare('INSERT INTO reactions (slug, visitor) VALUES (?, ?) ON CONFLICT DO NOTHING')
       : db.prepare('DELETE FROM reactions WHERE slug = ? AND visitor = ?');
     const results = await db.batch([
-      mutation.bind('why-we-work', visitor),
+      mutation.bind(slug, visitor),
       db.prepare(`SELECT likes AS count, EXISTS(SELECT 1 FROM reactions WHERE slug = ? AND visitor = ?) AS liked
-        FROM reaction_articles WHERE slug = ?`).bind('why-we-work', visitor, 'why-we-work'),
+        FROM reaction_articles WHERE slug = ?`).bind(slug, visitor, slug),
     ]);
     const state = results[1].results[0];
     return json({count: state.count, liked: !!state.liked});
