@@ -10,7 +10,7 @@ function setup(fetch) {
   const button = {querySelector: s=>s==='.reaction-label'?label:icon,
     setAttribute:(k,v)=>attributes[k]=v, removeAttribute:k=>delete attributes[k],
     addEventListener:(_event,fn)=>click=fn};
-  vm.runInNewContext(script, {fetch, AbortSignal, document:{getElementById:id=>id==='reaction-like'?button:note}});
+  vm.runInNewContext(script, {fetch, AbortSignal, location:{pathname:'/essays/why-we-work/'}, document:{getElementById:id=>id==='reaction-like'?button:note}});
   return {label, icon, note, button, attributes, click:()=>click()};
 }
 test('button reads shared state, sends desired state and prevents duplicate in-flight clicks', async () => {
