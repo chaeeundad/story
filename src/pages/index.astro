@@ -1,0 +1,13 @@
+---
+import Base from '../layouts/Base.astro';
+import {getCollection} from 'astro:content';
+const posts=(await getCollection('blog',({data})=>!data.draft)).sort((a,b)=>b.data.pubDate.valueOf()-a.data.pubDate.valueOf());
+---
+<Base>
+<section class="intro"><div class="eyebrow">생각하고, 질문하고, 기록합니다.</div><h1>아직 생각 중입니다.</h1><p class="lead">기술과 과학, 인간과 사회에 관해 궁금했던 것들.<br/>답을 찾는 과정에서 새롭게 발견한 생각들을 기록합니다.</p></section>
+<section><h2 class="section-head">글</h2>
+{posts.map(post=><a class="post" href={post.data.legacyUrl ?? `/writing/${post.id}/`}>
+<div class="meta">{post.data.pubDate.toLocaleDateString('ko-KR',{year:'numeric',month:'long',day:'numeric'})} · {post.data.tags.join(' · ')}</div>
+<h2>{post.data.title}</h2><p>{post.data.description}</p>
+</a>)}
+</section></Base>
