@@ -89,7 +89,7 @@ async function handle(request, env) {
     headers['Set-Cookie'] = `${COOKIE}=${visitor}.${signature}; Path=/; HttpOnly; Secure; SameSite=Strict; Max-Age=31536000`;
   }
   const state = await db.prepare(`SELECT likes AS count, EXISTS(SELECT 1 FROM reactions WHERE slug = ? AND visitor = ?) AS liked
-    FROM reaction_articles WHERE slug = ?`).bind('why-we-work', visitor, 'why-we-work').first();
+    FROM reaction_articles WHERE slug = ?`).bind(slug, visitor, slug).first();
   return json({count: state.count, liked: !!state.liked}, 200, headers);
 }
 export default {
