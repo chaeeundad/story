@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mino.co.kr/sitemap.xml
