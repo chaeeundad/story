@@ -85,23 +85,14 @@ html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--in
   <button type="button" id="reaction-copy" class="reader-response-button"><span aria-hidden="true">🔗</span><span class="copy-label">링크 복사</span></button>
   <button type="button" id="reaction-share" class="reader-response-button"><span aria-hidden="true">↗</span>공유하기</button>
  </div>
- <p class="reader-response-note" id="reaction-note" role="status" aria-live="polite">공감은 이 기기에만 저장됩니다.</p>
+ <p class="reader-response-note" id="reaction-note" role="status" aria-live="polite">공감은 익명으로 집계됩니다.</p>
  <div class="reader-response-more"><span>다른 생각도 읽어보세요.</span> <a href="/">모든 글 보기 <span aria-hidden="true">→</span></a></div>
 </section>
 <div class="endnote">끝까지 읽어주셔서 감사합니다.<br>이 글은 요즘 AI와 나누었던 대화 한 세션을 읽기 편한 글로 정리한 것입니다.<div class="actions"><button onclick="window.print()">인쇄 · PDF 저장</button></div></div><footer>우리는 무엇을 위해 일해왔는가 · 2026</footer><button class="floating" aria-label="맨 위로" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button><script>const p=document.getElementById('progress');function update(){const d=document.documentElement;p.style.width=(100*scrollY/Math.max(1,d.scrollHeight-innerHeight))+'%'}addEventListener('scroll',update,{passive:true});update();</script><script>
 (function(){
  const url='https://mino.co.kr/essays/why-we-work/';
  const title='우리는 무엇을 위해 일해왔는가';
- const like=document.getElementById('reaction-like');
- const likeText=like.querySelector('.reaction-label');
- const icon=like.querySelector('span');
  const note=document.getElementById('reaction-note');
- const key='mino:reaction:why-we-work';
- let liked=false;
- try{liked=localStorage.getItem(key)==='liked'}catch(_){}
- function render(){like.setAttribute('aria-pressed',String(liked));likeText.textContent=liked?'공감했어요':'공감하기';icon.textContent=liked?'♥':'♡'}
- render();
- like.addEventListener('click',function(){liked=!liked;try{if(liked)localStorage.setItem(key,'liked');else localStorage.removeItem(key)}catch(_){}render();note.textContent=liked?'공감해 주셔서 감사합니다. 이 반응은 이 기기에만 저장됩니다.':'공감은 이 기기에만 저장됩니다.'});
  async function copyLink(){try{await navigator.clipboard.writeText(url);note.textContent='글 주소를 복사했어요.';document.querySelector('.copy-label').textContent='복사 완료';setTimeout(function(){document.querySelector('.copy-label').textContent='링크 복사'},2200)}catch(_){window.prompt('아래 주소를 복사해 주세요.',url)}}
  document.getElementById('reaction-copy').addEventListener('click',copyLink);
  document.getElementById('reaction-share').addEventListener('click',async function(){
@@ -109,4 +100,4 @@ html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--in
  window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(title)+'&url='+encodeURIComponent(url),'_blank','noopener,noreferrer');
  });
 })();
-</script></body></html>
+</script><script src="/reactions.js" defer></script></body></html>

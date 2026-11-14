@@ -7,13 +7,20 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "check": "astro check"
+    "check": "astro check",
+    "test": "node --test tests/*.test.mjs",
+    "reactions:config": "node scripts/reactions-config.mjs",
+    "reactions:dev": "wrangler dev --config workers/reactions/wrangler.json",
+    "reactions:migrate:local": "wrangler d1 migrations apply DB --local --config workers/reactions/wrangler.json",
+    "reactions:bundle": "wrangler deploy --dry-run --config workers/reactions/wrangler.json"
   },
   "dependencies": {
     "astro": "^5.0.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.0",
-    "typescript": "^5.0.0"
+    "miniflare": "5.20261113.0-beta",
+    "typescript": "^5.0.0",
+    "wrangler": "4.162.0"
   }
 }

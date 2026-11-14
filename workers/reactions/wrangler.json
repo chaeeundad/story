@@ -1,0 +1,16 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "mino-reactions",
+  "main": "index.js",
+  "compatibility_date": "2026-07-01",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [{"pattern": "mino.co.kr/api/reactions*", "zone_name": "mino.co.kr"}],
+  "triggers": {"crons": ["17 3 * * *"]},
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "mino-reactions",
+    "database_id": "00000000-0000-0000-0000-000000000000",
+    "migrations_dir": "migrations"
+  }]
+}

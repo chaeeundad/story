@@ -3,3 +3,7 @@ dist/
 .astro/
 .env
 .DS_Store
+
+.wrangler/
+.dev.vars*
+workers/reactions/wrangler.deploy.json

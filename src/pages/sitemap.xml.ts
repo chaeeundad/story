@@ -1,7 +1,7 @@
 import {getCollection} from 'astro:content';
 export async function GET(){
 const posts=await getCollection('blog',({data})=>!data.draft);
-const urls=[
+const urls: {loc: string; lastmod?: string}[]=[
  {loc:'https://mino.co.kr/'},
  {loc:'https://mino.co.kr/about/'},
  ...posts.map(p=>({loc:new URL(p.data.legacyUrl??`/writing/${p.id}/`,'https://mino.co.kr').href,lastmod:p.data.pubDate.toISOString().slice(0,10)}))
