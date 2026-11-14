@@ -4,7 +4,8 @@
   const label = button.querySelector('.reaction-label');
   const icon = button.querySelector('span');
   const note = document.getElementById('reaction-note');
-  const endpoint = '/api/reactions?slug=why-we-work';
+  const slug = location.pathname.includes('/why-children-study/') ? 'why-children-study' : 'why-we-work';
+  const endpoint = '/api/reactions?slug=' + encodeURIComponent(slug);
   let liked = false;
   let ready = false;
   let busy = false;
