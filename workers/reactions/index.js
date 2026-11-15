@@ -45,7 +45,7 @@ async function readBody(request) {
 async function handle(request, env) {
   const url = new URL(request.url);
   const slug = url.searchParams.get('slug');
-  if (url.pathname !== '/api/reactions' || !['why-we-work', 'why-children-study'].includes(slug)) {
+  if (url.pathname !== '/api/reactions' || !['why-we-work', 'why-children-study', 'why-go-fishing'].includes(slug)) {
     return json({error: 'not_found'}, 404);
   }
   if (!['GET', 'PUT'].includes(request.method)) return json({error: 'method_not_allowed'}, 405, {Allow: 'GET, PUT'});

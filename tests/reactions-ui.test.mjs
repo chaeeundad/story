@@ -4,13 +4,13 @@ import vm from 'node:vm';
 import {readFile} from 'node:fs/promises';
 const script = await readFile('public/reactions.js', 'utf8');
 const tick = () => new Promise(resolve => setImmediate(resolve));
-function setup(fetch) {
+function setup(fetch, pathname = '/essays/why-we-work/') {
   const label = {}, icon = {}, note = {}, attributes = {};
   let click;
   const button = {querySelector: s=>s==='.reaction-label'?label:icon,
     setAttribute:(k,v)=>attributes[k]=v, removeAttribute:k=>delete attributes[k],
     addEventListener:(_event,fn)=>click=fn};
-  vm.runInNewContext(script, {fetch, AbortSignal, location:{pathname:'/essays/why-we-work/'}, document:{getElementById:id=>id==='reaction-like'?button:note}});
+  vm.runInNewContext(script, {fetch, AbortSignal, location:{pathname}, document:{getElementById:id=>id==='reaction-like'?button:note}});
   return {label, icon, note, button, attributes, click:()=>click()};
 }
 test('button reads shared state, sends desired state and prevents duplicate in-flight clicks', async () => {
@@ -46,4 +46,11 @@ test('initial API failure never presents a fabricated zero or saved reaction', a
   await tick();
   assert.equal(ui.label.textContent,undefined);
   assert.equal(ui.button.disabled,false);
+});
+
+test('new fishing essay uses its own article slug without defaulting to an older essay', async () => {
+  const urls = [];
+  setup(async (url) => { urls.push(url); return Response.json({liked:false,count:0}); }, '/writing/why-go-fishing/');
+  await tick();
+  assert.equal(urls[0], '/api/reactions?slug=why-go-fishing');
 });
