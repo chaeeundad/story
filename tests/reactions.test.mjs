@@ -13,6 +13,7 @@ before(async () => {
   }
   await db.prepare("INSERT INTO reaction_articles (slug) VALUES ('why-children-study')").run();
   await db.prepare("INSERT INTO reaction_articles (slug) VALUES ('why-go-fishing')").run();
+  await db.prepare("INSERT INTO reaction_articles (slug) VALUES ('does-humanity-need-to-work')").run();
 });
 after(async () => { await mf?.dispose(); });
 async function req({method = 'GET', cookie, ip = '192.0.2.1', origin = 'https://mino.co.kr', body, path = '/api/reactions?slug=why-we-work'} = {}) {
@@ -52,6 +53,13 @@ test('fishing essay reaction counts are independent from previous two articles',
   assert.deepEqual(await (await req({method:'PUT',cookie,path,body:{liked:true}})).json(), {count:1,liked:true});
   assert.deepEqual(await (await req({cookie,path:'/api/reactions?slug=why-children-study'})).json(), {count:1,liked:false});
   assert.deepEqual(await (await req({cookie,path:'/api/reactions?slug=why-we-work'})).json(), {count:1,liked:false});
+});
+test('new essay reaction counts are independent', async () => {
+ const cookie = await visitor('192.0.2.72');
+ const path = '/api/reactions?slug=does-humanity-need-to-work';
+ assert.deepEqual(await (await req({cookie,path})).json(),{count:0,liked:false});
+ assert.deepEqual(await (await req({method:'PUT',cookie,path,body:{liked:true}})).json(),{count:1,liked:true});
+ assert.deepEqual(await (await req({cookie,path:'/api/reactions?slug=why-go-fishing'})).json(),{count:1,liked:false});
 });
 test('rejects foreign origins, missing or forged cookies, invalid JSON and unknown articles', async () => {
   const cookie = await visitor('192.0.2.3');

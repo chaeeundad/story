@@ -54,3 +54,10 @@ test('new fishing essay uses its own article slug without defaulting to an older
   await tick();
   assert.equal(urls[0], '/api/reactions?slug=why-go-fishing');
 });
+
+test('new essay derives its independent reactions slug from URL', async () => {
+ const urls = [];
+ setup(async url=>{urls.push(url);return Response.json({liked:false,count:0})}, '/writing/does-humanity-need-to-work/');
+ await tick();
+ assert.equal(urls[0], '/api/reactions?slug=does-humanity-need-to-work');
+});
