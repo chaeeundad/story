@@ -10,6 +10,10 @@ npm run dev
 npm run build
 ```
 
+## Editorial workflow
+
+For every new essay or substantial revision, read [EDITORIAL_GUIDE.md](EDITORIAL_GUIDE.md) at the beginning, midway through editing, and before publishing. Repository agents should also follow [AGENTS.md](AGENTS.md). Drafting discussions do not authorize publication; the author must explicitly request it.
+
 ## Publishing
 
 Write new articles as Markdown under `src/content/blog/` and push to `main`. GitHub Actions builds and deploys the website.
