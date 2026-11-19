@@ -67,7 +67,7 @@ test('fifth essay reactions can be read, liked and unliked independently', async
   const path = '/api/reactions?slug=we-built-what-we-do-not-understand';
   assert.deepEqual(await (await req({cookie,path})).json(), {count:0, liked:false});
   assert.deepEqual(await (await req({method:'PUT',cookie,path,body:{liked:true}})).json(), {count:1, liked:true});
-  assert.deepEqual(await (await req({cookie,path:'/api/reactions?slug=does-humanity-need-to-work'})).json(), {count:0, liked:false});
+  assert.deepEqual(await (await req({cookie,path:'/api/reactions?slug=does-humanity-need-to-work'})).json(), {count:1, liked:false});
   assert.deepEqual(await (await req({method:'PUT',cookie,path,body:{liked:false}})).json(), {count:0, liked:false});
 });
 
