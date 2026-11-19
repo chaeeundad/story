@@ -68,3 +68,10 @@ test('fifth essay uses its own reactions slug', async () => {
   await tick();
   assert.equal(urls[0], '/api/reactions?slug=we-built-what-we-do-not-understand');
 });
+
+test('sixth essay derives the correct API slug', async () => {
+  const urls = [];
+  setup(async url=>{urls.push(url);return Response.json({liked:false,count:0})}, '/writing/why-we-still-build/');
+  await tick();
+  assert.equal(urls[0], '/api/reactions?slug=why-we-still-build');
+});
