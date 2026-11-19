@@ -61,3 +61,10 @@ test('new essay derives its independent reactions slug from URL', async () => {
  await tick();
  assert.equal(urls[0], '/api/reactions?slug=does-humanity-need-to-work');
 });
+
+test('fifth essay uses its own reactions slug', async () => {
+  const urls = [];
+  setup(async url => { urls.push(url); return Response.json({liked:false,count:0}); }, '/writing/we-built-what-we-do-not-understand/');
+  await tick();
+  assert.equal(urls[0], '/api/reactions?slug=we-built-what-we-do-not-understand');
+});
