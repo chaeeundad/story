@@ -1,10 +1,11 @@
 {
   "title": "아직 생각 중입니다",
-  "subtitle": "AI 시대를 맞이하는 IT 회사 대표이자 세 딸 아빠의 생각",
-  "author": "mino",
+  "subtitle": "AI 시대를 살아가는 세 딸의 아빠가 던지는 질문들",
+  "author": "이민호",
   "edition": "2026-11-20",
   "url": "https://mino.co.kr/books/vol1/",
   "language": "ko",
   "parts": 3,
-  "chapters": 10
+  "chapters": 10,
+  "genre": "인문 / 인문·교양"
 }

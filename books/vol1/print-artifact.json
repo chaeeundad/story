@@ -1,8 +1,17 @@
 {
-  "file": "아직-생각-중입니다-B5.docx",
-  "sha256": "75f4807970b5754d8912fca4ce38b25af4c6458bc9b394e30e582b228dbb5e28",
-  "bytes": 3005977,
-  "pages": 125,
-  "manuscript_characters": 111055,
-  "illustrations": 3
+  "file": "아직-생각-중입니다-이민호-B5-개정본.docx",
+  "sha256": "b0e8e4c29e7f22d247a3957ceccf780ef970b5735dac4b81313a672b07dd29a8",
+  "bytes": 26829389,
+  "pages": 164,
+  "manuscript_characters": 123738,
+  "illustrations": 16,
+  "verified_manuscript_blocks": 748,
+  "source_front_and_back_complete": true,
+  "page_geometry_twips": [
+    10660,
+    14912
+  ],
+  "body_font": "부크크 명조 Light 11pt / 22pt leading",
+  "subhead_font": "NanumGothic Bold 12.5pt",
+  "paragraph_after_pt": 4
 }

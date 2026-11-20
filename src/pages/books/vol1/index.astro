@@ -2,14 +2,15 @@
 import Base from '../../../layouts/Base.astro';
 import { Content, getHeadings } from '../../../../books/vol1/manuscript.md';
 import book from '../../../../books/vol1/book.json';
-const headings = getHeadings().filter((h: {depth:number; text:string}) => h.depth === 1 && h.text !== book.title);
+const headings = getHeadings().filter((h: {depth:number; text:string}) => (h.depth === 1 && h.text !== book.title) || h.text === '감사의 말');
 ---
-<Base title={`${book.title} — mino.`} description={book.subtitle}>
+<Base title={`${book.title} — mino.`} description={book.subtitle} author={book.author}>
+<script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"Book",name:book.title,alternativeHeadline:book.subtitle,author:{"@type":"Person",name:book.author},inLanguage:"ko",genre:book.genre,url:book.url})}/>
 <div class="reading-progress" aria-hidden="true"></div>
 <div class="book-tools"><a href="#book-toc">차례</a><a href="/">기존 에세이</a><button id="copy-book" type="button">책 주소 복사</button><span id="copy-status" role="status"></span></div>
 <details id="book-toc"><summary>책 차례 펼치기</summary><nav aria-label="책 차례"><p class="eyebrow">세 부 · 열 개의 질문</p><h2>차례</h2><ol>{headings.map((h: {slug:string; text:string}) => <li class:list={{part:h.text.startsWith('제')}}><a href={`#${h.slug}`}>{h.text}</a></li>)}</ol></nav></details>
 <article class="book-text" aria-label={book.title}><Content /></article>
-<footer class="book-colophon"><p>{book.title} · {book.author} 지음</p><p>{book.subtitle}</p><p>이 책은 저자와 AI의 대화에서 출발해 엮은 논픽션입니다. 기존 열 편의 에세이는 각자의 주소에서 그대로 읽을 수 있습니다.</p><a href="#book-toc">차례로 돌아가기</a></footer>
+<footer class="book-colophon"><p>{book.title} · {book.author} 지음</p><p>{book.subtitle}</p><p>이 책은 저자와 AI의 대화에서 출발해 엮은 논픽션입니다. 기존 열 편의 에세이는 각자의 주소에서 그대로 읽을 수 있습니다. 삽화는 창작 장면이며 실제 저자·가족의 기록이 아닙니다.</p><a href="#book-toc">차례로 돌아가기</a></footer>
 </Base>
 
 <script>
@@ -34,17 +35,21 @@ document.getElementById('copy-book')?.addEventListener('click',async()=>{
 #book-toc summary{cursor:pointer;font:16px system-ui,sans-serif;padding:10px 0}#book-toc ol{list-style:none;padding:0;font-size:16px;line-height:1.9}
 #book-toc li{margin:10px 0;padding-left:18px}#book-toc li.part{padding-left:0;margin-top:30px;font-weight:600}
 a:hover{text-decoration:underline;text-underline-offset:4px}
-.book-text{max-width:680px;margin:80px auto;font-size:17px;line-height:2.05;word-break:keep-all;overflow-wrap:anywhere}
-.book-text :global(h1){font-size:clamp(28px,4vw,38px);line-height:1.55;margin:100px 0 42px;scroll-margin-top:32px}
+.book-text{max-width:680px;margin:80px auto;font-size:18px;line-height:2.15;word-break:keep-all;overflow-wrap:anywhere}
+.book-text :global(h1){font-family:system-ui,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;font-weight:700;letter-spacing:-.035em;font-size:clamp(28px,4vw,38px);line-height:1.55;margin:150px 0 60px;padding-top:70px;scroll-margin-top:32px}
 .book-text :global(h1:first-child){font-size:clamp(34px,6vw,50px);margin-top:0}
-.book-text :global(h2){font-size:24px;line-height:1.6;margin:65px 0 25px;scroll-margin-top:32px}
+.book-text :global(h2){font-family:system-ui,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;font-weight:700;letter-spacing:-.025em;font-size:24px;line-height:1.6;margin:80px 0 30px;scroll-margin-top:32px}
 /* The interactive contents above replaces the manuscript's print-only contents. */
 .book-text :global(h2#차례),.book-text :global(h2#차례 + ul){display:none}
-.book-text :global(p){margin:0 0 25px}.book-text :global(img){display:block;width:100%;height:auto;margin:36px 0}
+.book-text :global(p){margin:0 0 32px}.book-text :global(img){display:block;width:100%;height:auto;margin:42px auto 65px;max-width:600px}
 .book-text :global(hr){border:0;border-top:1px solid var(--line);margin:70px 0}
 .book-text :global(ul),.book-text :global(ol){font-size:16px}
 .book-colophon{font-size:14px;line-height:1.9;border-top:1px solid var(--line);padding:30px 0}
-@media(max-width:650px){.book-text{font-size:16px;margin-top:55px}.book-tools{gap:14px}.book-text :global(h2){font-size:22px}}
+@media(max-width:650px){.book-text{font-size:17px;margin-top:55px}.book-tools{gap:14px}.book-text :global(h2){font-size:22px}}
+.book-text :global(img[src*="04_"]),.book-text :global(img[src*="05_"]){max-width:300px}
+.book-text :global(img[src*="09_"]),.book-text :global(img[src*="10_"]),.book-text :global(img[src*="11_"]),.book-text :global(img[src*="12_"]),.book-text :global(img[src*="13_"]),.book-text :global(img[src*="14_"]),.book-text :global(img[src*="15_"]),.book-text :global(img[src*="16_"]){max-width:160px}
+.book-text :global(img[src*="13_"]),.book-text :global(img[src*="14_"]){aspect-ratio:378 / 225;object-fit:cover;object-position:top}
+.book-text :global(h1 + p:has(img)){margin-bottom:100px}
 /* A book-length page needs immediate jumps across distant chapters. */
 :global(html:root){scroll-behavior:auto}
 </style>

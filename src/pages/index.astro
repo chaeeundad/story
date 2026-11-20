@@ -23,7 +23,7 @@ const posts=(await getCollection('blog',({data})=>!data.draft)).sort((a,b)=>
 ---
 <Base title="mino. — 아직 생각 중입니다." description="기술과 과학, 역사와 사회에 관한 질문을 AI와의 대화를 통해 확장하고 기록하는 개인 서재입니다.">
 <section class="intro"><div class="eyebrow">생각하고, 질문하고, 기록합니다.</div><h1>아직 생각 중입니다.</h1><p class="lead">기술과 과학, 인간과 사회에 관해 궁금했던 것들.<br/>답을 찾는 과정에서 새롭게 발견한 생각들을 기록합니다.</p></section>
-<section aria-label="단행본"><h2 class="section-head">책</h2><a class="post" href="/books/vol1/"><div class="meta">3부 10장 · 단행본 편집본</div><h2>아직 생각 중입니다</h2><p>AI 시대를 맞이하는 IT 회사 대표이자 세 딸 아빠의 생각</p></a></section>
+<section aria-label="단행본"><h2 class="section-head">책</h2><a class="post" href="/books/vol1/"><div class="meta">3부 10장 · 단행본 편집본</div><h2>아직 생각 중입니다</h2><p>AI 시대를 살아가는 세 딸의 아빠가 던지는 질문들</p></a></section>
 <section><h2 class="section-head">글</h2>
 {posts.map(post=><a class="post" href={post.data.legacyUrl ?? `/writing/${post.id}/`}>
 <div class="meta">{post.data.pubDate.toLocaleDateString('ko-KR',{year:'numeric',month:'long',day:'numeric'})} · {post.data.tags.join(' · ')}</div>
