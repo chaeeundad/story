@@ -117,7 +117,7 @@ for text in re.split(r'\n\s*\n',bodytext):
   if references:p.alignment=WD_ALIGN_PARAGRAPH.LEFT;p.paragraph_format.line_spacing=Pt(16);p.paragraph_format.first_line_indent=Pt(0);p.paragraph_format.space_after=Pt(14)
   if pending_body:p.paragraph_format.page_break_before=True;pending_body=False
 p=heading('판권');bookmark(p,'colophon',101)
-for txt in [book['title'],book['subtitle'],'지은이  '+book['author'],'© 2026 '+book['author'],'분류  '+book['genre'],'https://mino.co.kr/books/vol1/',book['writingDisclosure'],'삽화는 창작 장면이며 저자와 가족의 실제 모습을 기록한 그림이 아닙니다. 피아노 장면도 미래를 상상한 것입니다.','본문 글꼴  부크크 명조 Light · (주)부크크','제목 글꼴  나눔고딕 Bold · 네이버 (SIL OFL 1.1)']:
+for txt in [book['title'], '발 행｜2026년 11월 20일', '저 자｜'+book['author'], '펴낸이｜한건희', '펴낸곳｜주식회사 부크크', '출판사등록｜2014.07.15(제2014-16호)', '주 소｜서울특별시 금천구 가산디지털1로 119 SK트윈타워 A동 305호', '전 화｜1670-8316', '이메일｜info@bookk.co.kr', 'ISBN｜', '© 2026 '+book['author'], '본 책은 저작자의 지적 재산으로서 무단 전재와 복제를 금합니다.', book['writingDisclosure'], '삽화는 창작 장면이며 저자와 가족의 실제 모습을 기록한 그림이 아닙니다. 피아노 장면도 미래를 상상한 것입니다.', '본문 글꼴  부크크 명조 Light · (주)부크크', '제목 글꼴  나눔고딕 Bold · 네이버 (SIL OFL 1.1)']:
  p=para(txt,10,WD_ALIGN_PARAGRAPH.LEFT);p.paragraph_format.space_after=Pt(12)
 d.core_properties.title=book['title'];d.core_properties.subject=book['subtitle'];d.core_properties.author=book['author'];d.core_properties.last_modified_by=book['author'];d.core_properties.comments='';d.core_properties.keywords=''
 out.parent.mkdir(parents=True,exist_ok=True);intermediate=assets/'assembled.docx';d.save(intermediate)
