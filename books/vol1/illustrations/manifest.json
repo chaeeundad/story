@@ -1,99 +1,143 @@
 [
   {
     "number": 9,
-    "file": "09_night_thinking.png",
+    "file": "09_night_thinking-print.png",
     "heading": "프롤로그 · 아직 생각 중입니다",
-    "width_mm": 30,
+    "width_mm": 73.48,
     "crop_bottom_percent": 0,
-    "alt": "창밖을 보며 생각하는 사람"
+    "alt": "창밖을 보며 생각하는 사람",
+    "source_file": "09_night_thinking.png",
+    "restoration": "Original-guided high-resolution image_gen edit; original retained.",
+    "role": "divider",
+    "height_mm": 48.99,
+    "target_area_mm2": 3600
   },
   {
     "number": 6,
     "file": "06_work_creativity.png",
     "heading": "우리는 무엇을 위해 일해왔는가",
-    "width_mm": 85,
+    "width_mm": 84.85,
     "crop_bottom_percent": 0,
-    "alt": "노동과 창조의 시간"
+    "alt": "노동과 창조의 시간",
+    "role": "divider",
+    "height_mm": 42.42,
+    "target_area_mm2": 3600
   },
   {
     "number": 3,
     "file": "03_childrens_education_and_imagination.png",
     "heading": "아이들은 무엇을 위해 공부하는가",
-    "width_mm": 120,
+    "width_mm": 73.48,
     "crop_bottom_percent": 0,
-    "alt": "여러 가능성을 상상하는 아이들"
+    "alt": "여러 가능성을 상상하는 아이들",
+    "role": "divider",
+    "height_mm": 48.99,
+    "target_area_mm2": 3600
   },
   {
     "number": 1,
     "file": "01_fishing_process_over_result.png",
     "heading": "물고기를 사지 않고 낚으러 가는 이유",
-    "width_mm": 120,
+    "width_mm": 73.48,
     "crop_bottom_percent": 0,
-    "alt": "낚시의 과정을 즐기는 창작 장면"
+    "alt": "낚시의 과정을 즐기는 창작 장면",
+    "role": "divider",
+    "height_mm": 48.99,
+    "target_area_mm2": 3600
   },
   {
     "number": 11,
-    "file": "11_shared_workplace.png",
+    "file": "11_shared_workplace-print.png",
     "heading": "인간은 더 이상 일하지 않아도 되는가",
-    "width_mm": 30,
+    "width_mm": 73.48,
     "crop_bottom_percent": 0,
-    "alt": "변화하는 일터"
+    "alt": "변화하는 일터",
+    "source_file": "11_shared_workplace.png",
+    "restoration": "Original-guided high-resolution image_gen edit; original retained.",
+    "role": "divider",
+    "height_mm": 48.99,
+    "target_area_mm2": 3600
   },
   {
     "number": 5,
     "file": "05_human_ai_collaboration.png",
     "heading": "우리는 이해하지 못하는 것을 만들기 시작했다",
-    "width_mm": 80,
+    "width_mm": 48.99,
     "crop_bottom_percent": 0,
-    "alt": "새로운 도구와 함께하는 작업대"
+    "alt": "새로운 도구와 함께하는 작업대",
+    "role": "divider",
+    "height_mm": 73.48,
+    "target_area_mm2": 3600
   },
   {
     "number": 2,
     "file": "02_human_ai_building_trust.png",
     "heading": "똑똑한 기계 앞에서 망설이는 사람",
-    "width_mm": 120,
+    "width_mm": 73.48,
     "crop_bottom_percent": 0,
-    "alt": "인간과 AI가 함께 신뢰를 쌓는 상징적 장면"
+    "alt": "인간과 AI가 함께 신뢰를 쌓는 상징적 장면",
+    "role": "divider",
+    "height_mm": 48.99,
+    "target_area_mm2": 3600
   },
   {
     "number": 14,
-    "file": "14_choice_and_uncertainty.png",
+    "file": "14_choice_and_uncertainty-print.png",
     "heading": "우리가 만든 세상에 순응하는 날",
-    "width_mm": 30,
-    "crop_bottom_percent": 10,
-    "alt": "선택의 갈림길"
+    "width_mm": 73.48,
+    "crop_bottom_percent": 0,
+    "alt": "선택의 갈림길",
+    "source_file": "14_choice_and_uncertainty.png",
+    "restoration": "Original-guided high-resolution image_gen edit; original retained.",
+    "role": "divider",
+    "height_mm": 48.99,
+    "target_area_mm2": 3600
   },
   {
     "number": 16,
-    "file": "16_father_and_three_daughters.png",
+    "file": "16_father_and_three_daughters-print.png",
     "heading": "인간은 왜 다른 인간을 필요로 하는가",
-    "width_mm": 30,
+    "width_mm": 73.48,
     "crop_bottom_percent": 0,
-    "alt": "가족이 함께 시간을 보내는 창작 장면"
+    "alt": "가족이 함께 시간을 보내는 창작 장면",
+    "source_file": "16_father_and_three_daughters.png",
+    "restoration": "Original-guided high-resolution image_gen edit; original retained.",
+    "role": "divider",
+    "height_mm": 48.99,
+    "target_area_mm2": 3600
   },
   {
     "number": 7,
     "file": "07_leisure_coastal_ride.png",
     "heading": "내 인생은 내가 살아볼게",
-    "width_mm": 85,
+    "width_mm": 84.85,
     "crop_bottom_percent": 0,
-    "alt": "해안 길을 달리는 자전거"
+    "alt": "해안 길을 달리는 자전거",
+    "role": "divider",
+    "height_mm": 42.42,
+    "target_area_mm2": 3600
   },
   {
     "number": 4,
     "file": "04_unmapped_future_paths.png",
     "heading": "그래도 우리는 내일을 살아간다",
-    "width_mm": 80,
+    "width_mm": 48.99,
     "crop_bottom_percent": 0,
-    "alt": "갈림길 앞에서 미래를 바라보는 창작 장면"
+    "alt": "갈림길 앞에서 미래를 바라보는 창작 장면",
+    "role": "divider",
+    "height_mm": 73.48,
+    "target_area_mm2": 3600
   },
   {
     "number": 8,
     "file": "08_piano_intrinsic_achievement.png",
     "heading": "에필로그 · 내일도 생각할 것이다",
-    "width_mm": 85,
+    "width_mm": 84.85,
     "crop_bottom_percent": 0,
-    "alt": "보상과 무관하게 피아노를 연주하는 상상 장면"
+    "alt": "보상과 무관하게 피아노를 연주하는 상상 장면",
+    "role": "divider",
+    "height_mm": 42.42,
+    "target_area_mm2": 3600
   },
   {
     "number": 10,
@@ -101,7 +145,9 @@
     "heading": "기억을 맡긴 최초의 기계",
     "width_mm": 30,
     "crop_bottom_percent": 0,
-    "alt": "문자에서 AI로 이어지는 지식의 도구"
+    "alt": "문자에서 AI로 이어지는 지식의 도구",
+    "role": "vignette",
+    "height_mm": 19.84
   },
   {
     "number": 12,
@@ -109,7 +155,9 @@
     "heading": "부자가 된 사회가 모두를 부자로 만드는가",
     "width_mm": 30,
     "crop_bottom_percent": 0,
-    "alt": "물질적 풍요와 마음의 저울"
+    "alt": "물질적 풍요와 마음의 저울",
+    "role": "vignette",
+    "height_mm": 19.84
   },
   {
     "number": 13,
@@ -117,7 +165,9 @@
     "heading": "시험을 통과한 기술의 바깥",
     "width_mm": 30,
     "crop_bottom_percent": 10,
-    "alt": "재료를 탐구하는 연구의 상징"
+    "alt": "재료를 탐구하는 연구의 상징",
+    "role": "vignette",
+    "height_mm": 17.86
   },
   {
     "number": 15,
@@ -125,6 +175,8 @@
     "heading": "아무도 읽지 않는 글",
     "width_mm": 30,
     "crop_bottom_percent": 0,
-    "alt": "비 오는 날 글을 쓰는 시간"
+    "alt": "비 오는 날 글을 쓰는 시간",
+    "role": "vignette",
+    "height_mm": 19.84
   }
 ]
