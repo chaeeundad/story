@@ -21,6 +21,9 @@ assert '안산' not in md
 assert len(d.inline_shapes)==16
 assert int(d.sections[0].page_width.twips)==10660 and int(d.sections[0].page_height.twips)==14912
 pdf=PdfReader(render/(doc.stem+'.pdf'));texts=[re.sub(r'\s','',p.extract_text()) for p in pdf.pages]
+disclosure=json.loads((r/'books/vol1/book.json').read_text())['writingDisclosure']
+assert disclosure in [p.text for p in d.paragraphs]
+assert re.sub(r'\s','',disclosure) in texts[-1]
 entries=json.loads((r/'.book-production/toc-entries.json').read_text());pages=json.loads((r/'books/vol1/print-page-map.json').read_text())
 for title,anchor,_ in entries:assert re.sub(r'\s','',title) in texts[pages[anchor]-1],(title,anchor)
 for title,anchor,_ in entries:

@@ -10,7 +10,7 @@ const headings = getHeadings().filter((h: {depth:number; text:string}) => (h.dep
 <div class="book-tools"><a href="#book-toc">차례</a><a href="/">기존 에세이</a><button id="copy-book" type="button">책 주소 복사</button><span id="copy-status" role="status"></span></div>
 <details id="book-toc"><summary>책 차례 펼치기</summary><nav aria-label="책 차례"><p class="eyebrow">세 부 · 열 개의 질문</p><h2>차례</h2><ol>{headings.map((h: {slug:string; text:string}) => <li class:list={{part:h.text.startsWith('제')}}><a href={`#${h.slug}`}>{h.text}</a></li>)}</ol></nav></details>
 <article class="book-text" aria-label={book.title}><Content /></article>
-<footer class="book-colophon"><p>{book.title} · {book.author} 지음</p><p>{book.subtitle}</p><p>이 책은 저자와 AI의 대화에서 출발해 엮은 논픽션입니다. 기존 열 편의 에세이는 각자의 주소에서 그대로 읽을 수 있습니다. 삽화는 창작 장면이며 실제 저자·가족의 기록이 아닙니다.</p><a href="#book-toc">차례로 돌아가기</a></footer>
+<footer class="book-colophon"><p>{book.title} · {book.author} 지음</p><p>{book.subtitle}</p><p>{book.writingDisclosure}</p><p>기존 열 편의 에세이는 각자의 주소에서 그대로 읽을 수 있습니다. 삽화는 창작 장면이며 실제 저자·가족의 기록이 아닙니다.</p><a href="#book-toc">차례로 돌아가기</a></footer>
 </Base>
 
 <script>

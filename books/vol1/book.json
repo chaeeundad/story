@@ -7,5 +7,6 @@
   "language": "ko",
   "parts": 3,
   "chapters": 10,
-  "genre": "인문 / 인문·교양"
+  "genre": "인문 / 인문·교양",
+  "writingDisclosure": "이 책은 ChatGPT-6와 나눈 대화를 바탕으로, 원고 작성과 퇴고에 ChatGPT의 도움을 받아 완성했습니다."
 }
