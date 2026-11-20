@@ -27,3 +27,39 @@ Edit target: book illustration 14. Faithful high resolution restoration, single 
 입력: `new/16_father_and_three_daughters.png`
 
 Edit target: original book illustration 16. Faithful high resolution restoration for print, landscape 1536x1024 or greater. Preserve exactly one father and THREE daughters sitting seen from behind around a small campfire, tent on right, mountain silhouettes and starry milky way sky, muted indigo and warm ochre, vintage illustration paper grain. Retain relative positions, silhouettes, clothing and quiet family atmosphere. Improve detail without turning into photography. Do not add or remove people. Imagined illustration, not real family portrait. No border, no text, no watermark.
+
+## 본문 삽화 확대 보완 — 2026-11-20
+
+본문 4점은 폭 55mm, 1536×1024px로 통일했다. 원본 참조 재생성이므로 세부 묘사에는 차이가 있다.
+
+### 10_evolution_of_knowledge-print.png
+
+원본: `10_evolution_of_knowledge.png`
+
+프롬프트:
+
+> Edit target: original book illustration 10. Faithful high-resolution restoration for print, landscape 1536x1024. Preserve the sequence of a clay tablet, open book, printing press, early desktop computer and glowing neural network above a small walking person. Retain their order, relative placement, warm ivory paper and muted blue/ochre palette. Preserve original illustration style, handmade paper grain, lighting and scene meaning. Improve clean detail without photorealism. Single full bleed artwork, no border, no extra objects, no added text, no watermark.
+
+### 12_production_and_wellbeing-print.png
+
+원본: `12_production_and_wellbeing.png`
+
+프롬프트:
+
+> Edit target: original book illustration 12. Faithful high-resolution restoration for print, landscape 1536x1024. Preserve the antique balance scale, stacks of gold coins in the left pan and orange heart in the right pan, centered composition, pale lavender and peach paper background. Keep both pans and all objects fully visible. Preserve original illustration style, handmade paper grain, lighting and scene meaning. Improve clean detail without photorealism. Single full bleed artwork, no border, no extra objects, no added text, no watermark.
+
+### 13_materials_research-print.png
+
+원본: `13_materials_research.png`
+
+프롬프트:
+
+> Edit target: original book illustration 13. Faithful high-resolution restoration for print, landscape 1536x1024. Preserve the ball-and-stick lattice on the left and faceted transparent crystal on the right against the grainy slate-blue research background. Keep background scientific marks subtle, decorative and non-instructional. Remove the stray thin collage strip and white separator at the bottom, extending the main illustration naturally to the edge. Preserve original illustration style, handmade paper grain, lighting and scene meaning. Improve clean detail without photorealism. Single full bleed artwork, no border, no extra objects, no added text, no watermark.
+
+### 15_writing_while_raining-print.png
+
+원본: `15_writing_while_raining.png`
+
+프롬프트:
+
+> Edit target: original book illustration 15. Faithful high-resolution restoration for print, landscape 1536x1024. Preserve the stack of books at left, ceramic mug at lower right, rain streaks on a dark window and warm lamp at upper right, muted blue and ochre vintage palette. Retain composition and quiet atmosphere. Preserve original illustration style, handmade paper grain, lighting and scene meaning. Improve clean detail without photorealism. Single full bleed artwork, no border, no extra objects, no added text, no watermark.

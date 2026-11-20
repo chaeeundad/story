@@ -102,6 +102,7 @@ for text in re.split(r'\n\s*\n',bodytext):
  elif text.startswith('!['):
   name=re.search(r'\((.*?)\)',text).group(1);alt=re.search(r'!\[(.*?)\]',text).group(1);item=manifest[Path(name).name]
   p=para('',align=WD_ALIGN_PARAGRAPH.CENTER);p.paragraph_format.space_before=Pt(20);p.paragraph_format.space_after=Pt(24);p.paragraph_format.line_spacing=None
+  if item['role']=='vignette':p.paragraph_format.space_before=Pt(12);p.paragraph_format.space_after=Pt(16);p.paragraph_format.keep_with_next=True
   shape=p.add_run().add_picture(str(root/'books/vol1'/name),width=Mm(item['width_mm']));shape._inline.docPr.set('descr',alt)
   if item['crop_bottom_percent']:
    crop=item['crop_bottom_percent'];shape.height=int(shape.height*(100-crop)/100)

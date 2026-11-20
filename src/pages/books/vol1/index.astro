@@ -49,9 +49,8 @@ a:hover{text-decoration:underline;text-underline-offset:4px}
 /* Divider art shares an equal visual area; retain each original aspect ratio. */
 .book-text :global(img[src*="04_"]),.book-text :global(img[src*="05_"]){max-width:294px}
 .book-text :global(img[src*="06_"]),.book-text :global(img[src*="07_"]),.book-text :global(img[src*="08_"]){max-width:509px}
-.book-text :global(img[src*="10_"]),.book-text :global(img[src*="12_"]),.book-text :global(img[src*="13_"]),.book-text :global(img[src*="15_"]){max-width:160px}
-.book-text :global(img[src*="13_"]){aspect-ratio:378 / 225;object-fit:cover;object-position:top}
-@media(max-width:650px){.book-text :global(img){max-width:86.6%}.book-text :global(img[src*="04_"]),.book-text :global(img[src*="05_"]){max-width:57.7%}.book-text :global(img[src*="06_"]),.book-text :global(img[src*="07_"]),.book-text :global(img[src*="08_"]){max-width:100%}.book-text :global(img[src*="10_"]),.book-text :global(img[src*="12_"]),.book-text :global(img[src*="13_"]),.book-text :global(img[src*="15_"]){max-width:160px}}
+.book-text :global(img[src*="10_"]),.book-text :global(img[src*="12_"]),.book-text :global(img[src*="13_"]),.book-text :global(img[src*="15_"]){max-width:300px;margin:28px auto 40px}
+@media(max-width:650px){.book-text :global(img){max-width:86.6%}.book-text :global(img[src*="04_"]),.book-text :global(img[src*="05_"]){max-width:57.7%}.book-text :global(img[src*="06_"]),.book-text :global(img[src*="07_"]),.book-text :global(img[src*="08_"]){max-width:100%}.book-text :global(img[src*="10_"]),.book-text :global(img[src*="12_"]),.book-text :global(img[src*="13_"]),.book-text :global(img[src*="15_"]){max-width:300px;margin:28px auto 40px}}
 .book-text :global(h1 + p:has(img)){margin-bottom:100px}
 /* A book-length page needs immediate jumps across distant chapters. */
 :global(html:root){scroll-behavior:auto}

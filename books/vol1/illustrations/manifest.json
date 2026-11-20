@@ -141,42 +141,50 @@
   },
   {
     "number": 10,
-    "file": "10_evolution_of_knowledge.png",
+    "file": "10_evolution_of_knowledge-print.png",
     "heading": "기억을 맡긴 최초의 기계",
-    "width_mm": 30,
+    "width_mm": 55,
     "crop_bottom_percent": 0,
     "alt": "문자에서 AI로 이어지는 지식의 도구",
     "role": "vignette",
-    "height_mm": 19.84
+    "height_mm": 36.67,
+    "source_file": "10_evolution_of_knowledge.png",
+    "restoration": "Original-guided high-resolution image_gen edit; original retained."
   },
   {
     "number": 12,
-    "file": "12_production_and_wellbeing.png",
+    "file": "12_production_and_wellbeing-print.png",
     "heading": "부자가 된 사회가 모두를 부자로 만드는가",
-    "width_mm": 30,
+    "width_mm": 55,
     "crop_bottom_percent": 0,
     "alt": "물질적 풍요와 마음의 저울",
     "role": "vignette",
-    "height_mm": 19.84
+    "height_mm": 36.67,
+    "source_file": "12_production_and_wellbeing.png",
+    "restoration": "Original-guided high-resolution image_gen edit; original retained."
   },
   {
     "number": 13,
-    "file": "13_materials_research.png",
+    "file": "13_materials_research-print.png",
     "heading": "시험을 통과한 기술의 바깥",
-    "width_mm": 30,
-    "crop_bottom_percent": 10,
+    "width_mm": 55,
+    "crop_bottom_percent": 0,
     "alt": "재료를 탐구하는 연구의 상징",
     "role": "vignette",
-    "height_mm": 17.86
+    "height_mm": 36.67,
+    "source_file": "13_materials_research.png",
+    "restoration": "Original-guided high-resolution image_gen edit; original retained."
   },
   {
     "number": 15,
-    "file": "15_writing_while_raining.png",
+    "file": "15_writing_while_raining-print.png",
     "heading": "아무도 읽지 않는 글",
-    "width_mm": 30,
+    "width_mm": 55,
     "crop_bottom_percent": 0,
     "alt": "비 오는 날 글을 쓰는 시간",
     "role": "vignette",
-    "height_mm": 19.84
+    "height_mm": 36.67,
+    "source_file": "15_writing_while_raining.png",
+    "restoration": "Original-guided high-resolution image_gen edit; original retained."
   }
 ]
