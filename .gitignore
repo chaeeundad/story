@@ -7,3 +7,10 @@ dist/
 .wrangler/
 .dev.vars*
 workers/reactions/wrangler.deploy.json
+
+.book-production/
+.pnpm-store/
+pnpm-lock.yaml
+pnpm-workspace.yaml
+
+output/

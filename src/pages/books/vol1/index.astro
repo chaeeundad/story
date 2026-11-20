@@ -1,0 +1,44 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { Content, getHeadings } from '../../../../books/vol1/manuscript.md';
+import book from '../../../../books/vol1/book.json';
+const headings = getHeadings().filter((h: {depth:number; text:string}) => h.depth === 1 && h.text !== book.title);
+---
+<Base title={`${book.title} — mino.`} description={book.subtitle}>
+<div class="reading-progress" aria-hidden="true"></div>
+<div class="book-tools"><a href="#book-toc">차례</a><a href="/">기존 에세이</a><button id="copy-book" type="button">책 주소 복사</button><span id="copy-status" role="status"></span></div>
+<details id="book-toc"><summary>책 차례 펼치기</summary><nav aria-label="책 차례"><p class="eyebrow">세 부 · 열 개의 질문</p><h2>차례</h2><ol>{headings.map((h: {slug:string; text:string}) => <li class:list={{part:h.text.startsWith('제')}}><a href={`#${h.slug}`}>{h.text}</a></li>)}</ol></nav></details>
+<article class="book-text" aria-label={book.title}><Content /></article>
+<footer class="book-colophon"><p>{book.title} · {book.author} 지음</p><p>{book.subtitle}</p><p>이 책은 저자와 AI의 대화에서 출발해 엮은 논픽션입니다. 기존 열 편의 에세이는 각자의 주소에서 그대로 읽을 수 있습니다.</p><a href="#book-toc">차례로 돌아가기</a></footer>
+</Base>
+
+<script>
+const bar = document.querySelector<HTMLElement>('.reading-progress');
+function progress(){if(bar) bar.style.width=`${100 * window.scrollY / Math.max(1,document.documentElement.scrollHeight-innerHeight)}%`;}
+addEventListener('scroll',progress,{passive:true});progress();
+document.getElementById('copy-book')?.addEventListener('click',async()=>{
+ const status=document.getElementById('copy-status');
+ try {await navigator.clipboard.writeText('https://mino.co.kr/books/vol1/');if(status) status.textContent='주소를 복사했습니다.';}
+ catch {if(status) status.textContent='주소창의 책 주소를 복사해 주세요.';}
+});
+</script>
+<style>
+.reading-progress{position:fixed;top:0;left:0;height:3px;background:var(--accent);z-index:10;width:0}
+.book-tools{display:flex;gap:20px;flex-wrap:wrap;align-items:center;padding:22px 0;font:14px system-ui,sans-serif}
+.book-tools button{font:inherit;background:none;border:1px solid var(--line);border-radius:4px;padding:8px 12px;color:var(--ink);cursor:pointer}
+#copy-status{color:var(--accent)}
+#book-toc{padding:18px 0;border-bottom:1px solid var(--line);scroll-margin-top:30px}
+#book-toc summary{cursor:pointer;font:16px system-ui,sans-serif;padding:10px 0}#book-toc ol{list-style:none;padding:0;font-size:16px;line-height:1.9}
+#book-toc li{margin:10px 0;padding-left:18px}#book-toc li.part{padding-left:0;margin-top:30px;font-weight:600}
+a:hover{text-decoration:underline;text-underline-offset:4px}
+.book-text{max-width:680px;margin:80px auto;font-size:17px;line-height:2.05;word-break:keep-all;overflow-wrap:anywhere}
+.book-text :global(h1){font-size:clamp(28px,4vw,38px);line-height:1.55;margin:100px 0 42px;scroll-margin-top:32px}
+.book-text :global(h1:first-child){font-size:clamp(34px,6vw,50px);margin-top:0}
+.book-text :global(h2){font-size:24px;line-height:1.6;margin:65px 0 25px;scroll-margin-top:32px}
+.book-text :global(p){margin:0 0 25px}.book-text :global(img){display:block;width:100%;height:auto;margin:36px 0}
+.book-text :global(hr){border:0;border-top:1px solid var(--line);margin:70px 0}
+.book-text :global(ul),.book-text :global(ol){font-size:16px}
+.book-colophon{font-size:14px;line-height:1.9;border-top:1px solid var(--line);padding:30px 0}
+@media(max-width:650px){.book-text{font-size:16px;margin-top:55px}.book-tools{gap:14px}.book-text :global(h2){font-size:22px}}
+@media(prefers-reduced-motion:reduce){:global(html){scroll-behavior:auto}}
+</style>

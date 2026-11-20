@@ -87,3 +87,11 @@ For manual API development, run `npm run reactions:migrate:local` then
 intentional; a plain HTTP Astro preview alone does not provide the reactions API.
 To roll back UI/Worker code, redeploy the previous revision without dropping the
 D1 tables; preserve the data and signing key.
+
+## Book edition
+
+The complete revised book **아직 생각 중입니다** is available at `/books/vol1/`.
+Its single source is `books/vol1/manuscript.md`; metadata, illustrations, editorial
+history, and print production notes live alongside it. See
+[book production](books/vol1/PRODUCTION.md). The original ten standalone essay
+pages and reaction data remain unchanged.
