@@ -1,5 +1,5 @@
 // Read-only: no synthetic likes in the production database; never print cookies.
-const requiredSlugs = ['why-we-work', 'why-children-study', 'why-go-fishing', 'does-humanity-need-to-work', 'we-built-what-we-do-not-understand', 'why-we-still-build', 'why-we-need-each-other', 'when-we-accept-the-world-we-made'];
+const requiredSlugs = ['why-we-work', 'why-children-study', 'why-go-fishing', 'does-humanity-need-to-work', 'we-built-what-we-do-not-understand', 'why-we-still-build', 'why-we-need-each-other', 'when-we-accept-the-world-we-made', 'let-me-live-my-own-life'];
 for (let attempt = 0; attempt < 6; attempt++) {
   try {
     const responses = await Promise.all(requiredSlugs.map(async slug => {
