@@ -20,6 +20,8 @@ before(async () => {
   await db.prepare("INSERT INTO reaction_articles (slug) VALUES ('when-we-accept-the-world-we-made')").run();
   await db.prepare("INSERT INTO reaction_articles (slug) VALUES ('let-me-live-my-own-life')").run();
   await db.prepare("INSERT INTO reaction_articles (slug) VALUES ('still-we-live-tomorrow')").run();
+  const filmMigration = await readFile('workers/reactions/migrations/0011_film_essay.sql', 'utf8');
+  await db.prepare(filmMigration.replace(/--[^\n]*/g, '').trim()).run();
 });
 after(async () => { await mf?.dispose(); });
 async function req({method = 'GET', cookie, ip = '192.0.2.1', origin = 'https://mino.co.kr', body, path = '/api/reactions?slug=why-we-work'} = {}) {
@@ -112,6 +114,18 @@ test('tenth essay reaction state is independent and reversible', async () => {
   assert.deepEqual(await (await req({cookie,path})).json(),{count:0,liked:false});
   assert.deepEqual(await (await req({method:'PUT',cookie,path,body:{liked:true}})).json(),{count:1,liked:true});
   assert.deepEqual(await (await req({method:'PUT',cookie,path,body:{liked:false}})).json(),{count:0,liked:false});
+});
+test('film essay migration preserves previous reactions and supports reversible independent likes', async () => {
+  const cookie = await visitor('192.0.2.79');
+  const path = '/api/reactions?slug=the-future-we-already-quoted';
+  const previous = await (await req({cookie})).json();
+  assert.deepEqual(await (await req({cookie,path})).json(), {count:0,liked:false});
+  assert.deepEqual(await (await req({method:'PUT',cookie,path,body:{liked:true}})).json(), {count:1,liked:true});
+  const sql = await readFile('workers/reactions/migrations/0011_film_essay.sql', 'utf8');
+  await db.prepare(sql.replace(/--[^\n]*/g, '').trim()).run();
+  assert.deepEqual(await (await req({cookie,path})).json(), {count:1,liked:true});
+  assert.deepEqual(await (await req({method:'PUT',cookie,path,body:{liked:false}})).json(), {count:0,liked:false});
+  assert.deepEqual(await (await req({cookie})).json(), previous);
 });
 test('rejects foreign origins, missing or forged cookies, invalid JSON and unknown articles', async () => {
   const cookie = await visitor('192.0.2.3');
