@@ -45,7 +45,8 @@ def render(s):
  return '\n'.join(out)
 
 parts=re.split(r'(?m)^## ',body)
-sections=[('s0','프롤로그','목록에서 대사로',parts[0])]
+prologue_title=re.search(r'prologueTitle: "(.*?)"',front)[1]
+sections=[('s0','프롤로그',prologue_title,parts[0])]
 labels=['일과 능력','역할과 삶','이미지와 신뢰','애착과 책임','도움과 선택','에필로그']
 for i,part in enumerate(parts[1:]):
  heading,content=part.split('\n',1)
