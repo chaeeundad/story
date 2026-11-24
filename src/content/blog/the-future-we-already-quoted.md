@@ -8,8 +8,6 @@ draft: false
 legacyUrl: "/writing/the-future-we-already-quoted/"
 ---
 
-<!-- essay-illustration:9 --><figure class="essay-illustration"><img src="/images/essays/book-09.webp" srcset="/images/essays/book-09-small.webp 480w, /images/essays/book-09.webp 1280w" sizes="(max-width: 664px) calc(100vw - 44px), 620px" width="1280" height="853" alt="밤하늘과 도시의 불빛을 바라보며 생각하는 사람을 그린 삽화" loading="eager" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
-
 AI에게 오늘을 예측한 영화들을 찾아 달라고 했다. 지금처럼 첨단 기술이 인간을 대신하는 세계를 배경으로 한 작품 열 편쯤이면 좋겠다고 덧붙였다. 돌아온 목록에는 사람의 말을 알아듣는 운영체제도 있었고, 배우 대신 화면에 등장하는 가상의 인물도 있었다. 거대한 컴퓨터 때문에 자기 자리가 없어질까 걱정하는 사무실 사람들은 1957년에 이미 영화 속에 있었다.
 
 오래된 영화 속 풍경을 지금의 생활과 나란히 놓으면 낯익은 장면들이 보인다. 사람과 대화하는 AI, 배우를 대신하는 가상의 인물, 자동화 때문에 달라지는 일자리. 당시 영화 제작자들은 이런 기술이 사람들의 삶에 들어온 세상을 어떻게 그렸을까. 그들이 상상한 미래와 오늘이 얼마나 닮았는지, 아직 다른 부분은 무엇인지 궁금했다.
@@ -213,6 +211,8 @@ MIT 미디어랩과 OpenAI 연구자들이 참여한 2025년의 4주 연구는 9
 처음에는 오늘을 예측한 영화 열 편이면 지금의 변화를 한눈에 볼 수 있을 것 같았다. 그런데 사무실에서 시작해 화면과 대화창을 지나 우주선까지 오고 보니, 같은 편리함도 누구의 자리에서 보느냐에 따라 달라졌다. 맡기는 사람에게 줄어든 수고가 일하던 사람에게는 사라진 역할일 수 있고, 즉시 도착한 다정한 응답이 오래 기다려 온 사람에게는 관계의 약속일 수 있었다.
 
 이 글을 쓰는 과정도 그 안에 있다. 영화의 목록을 부탁한 대화는 대사를 찾고 자료를 확인하고 글과 화면을 구성하는 일로 넓어졌다. AI가 일을 대신하는 문제를 AI의 도움으로 생각하는 중이다. 목록을 빨리 얻는 것만으로 충분했다면 여기까지 글을 고칠 이유는 없었을 것이다. 자료를 나란히 놓은 뒤 어떤 생각이 이어지는지, 그 흐름이 내가 하려던 말과 맞는지 읽는 시간이 따로 필요했다.
+
+<!-- essay-illustration:9 --><figure class="essay-illustration"><img src="/images/essays/book-09.webp" srcset="/images/essays/book-09-small.webp 480w, /images/essays/book-09.webp 1280w" sizes="(max-width: 664px) calc(100vw - 44px), 620px" width="1280" height="853" alt="밤하늘과 도시의 불빛을 바라보며 생각하는 사람을 그린 삽화" loading="lazy" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
 
 시간을 줄여 주고 혼자라면 시도하지 못했을 일을 가능하게 하는 도움은 반갑다. 그 도움을 받은 뒤 무엇이 달라졌는지 볼 여유도 있었으면 한다. 손이 덜 움직였는지, 판단할 기회가 줄었는지, 누군가의 일감이 사라졌는지, 원하던 시간을 되찾았는지에 따라 같은 결과를 얻었다는 말의 뜻이 달라진다.
 

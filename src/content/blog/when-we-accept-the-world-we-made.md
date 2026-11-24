@@ -7,8 +7,6 @@ draft: false
 legacyUrl: "/writing/when-we-accept-the-world-we-made/"
 ---
 
-<!-- essay-illustration:14 --><figure class="essay-illustration"><img src="/images/essays/book-14.webp" srcset="/images/essays/book-14-small.webp 480w, /images/essays/book-14.webp 1280w" sizes="(max-width: 664px) calc(100vw - 44px), 620px" width="1280" height="853" alt="배낭을 멘 사람이 산과 갈림길 표지판을 바라보는 삽화" loading="eager" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
-
 출근길에 유튜브를 보다가 문득 생각이 하나 떠올랐다. 지금 사람들은 인공지능을 이용해 생산성을 높이려고 한다. 코드를 빨리 작성하고, 자료를 정리하고, 복잡한 계산을 돕고, 이전에는 여러 사람이 해야 했던 일을 혼자서 처리하기도 한다. 회사에서는 이런 변화를 대체로 효율의 향상이라고 부른다. 그런데 같은 도구를 범죄자가 사용하지 않을 이유가 있을까.
 
 어떤 기술이 널리 사용되기 시작하면 그것을 좋은 목적에만 쓰는 사람들로 세상이 채워지는 것은 아니다. 통신 기술은 사람들을 연결하지만 사기와 기만에도 쓰인다. 자동차는 이동의 자유를 넓혀 주지만 범죄와 사고에도 얽힌다. 도구가 가진 능력은 사용자의 목적에 따라 다른 결과를 낳을 수 있다. 그렇다고 역사상의 모든 도구가 반드시 범죄에 쓰였다고 말할 수는 없지만, AI의 악용 가능성을 생산성 향상과 별개의 일로 취급하기도 어려워 보였다.
@@ -132,6 +130,8 @@ AI가 그 경쟁에 들어오면 무엇이 달라질까. 범죄를 저지르는 
 동물보호 제도의 비유로 돌아가 보자. 동물은 보호 제도의 형성과 집행을 이해하지 못할 수 있지만, 그로 인해 고통이 줄어드는 일 자체는 의미가 있다. 그런데 인간은 이제까지 자기 삶의 조건을 바꾸기 위해 언어와 법, 정치와 기술을 사용해 왔다. 그것이 인간의 유일한 가치라고 말할 수는 없지만, 그 능력을 포기하는 데 어떤 대가가 있는지는 충분히 생각해야 한다.
 
 또 다른 가능성도 있다. 우리가 AI의 모든 기술적 판단을 이해하지 못하더라도, 어떤 원칙은 인간이 정하고 그 원칙을 바꿀 권한도 유지할 수 있는 사회다. 인간이 모든 문제를 직접 해결해야만 사회의 주인이라고 할 수 있는 것은 아닐 것이다. 다만 형식적으로 최종 버튼을 누르는 것과 실질적으로 선택권을 갖는 것도 다르다. 진짜 선택권이 있으려면 대안과 결과를 어느 정도 이해하고, 문제를 제기할 방법이 필요하다.
+
+<!-- essay-illustration:14 --><figure class="essay-illustration"><img src="/images/essays/book-14.webp" srcset="/images/essays/book-14-small.webp 480w, /images/essays/book-14.webp 1280w" sizes="(max-width: 664px) calc(100vw - 44px), 620px" width="1280" height="853" alt="배낭을 멘 사람이 산과 갈림길 표지판을 바라보는 삽화" loading="lazy" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
 
 그러나 이 중간 지점마저 유지할 수 없게 되는 상황도 가정할 수 있다. 우리가 만든 AI가 인류의 통제를 완전히 벗어났고, 그 질서를 되돌릴 방법이 없는 미래다. 그때는 잘 운영되는지 평가하는 것만으로 충분할까. 아니면 어떤 대가를 치르더라도 통제권을 되찾아야 할까.
 

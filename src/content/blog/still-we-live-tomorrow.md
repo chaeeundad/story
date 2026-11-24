@@ -7,8 +7,6 @@ draft: false
 legacyUrl: "/writing/still-we-live-tomorrow/"
 ---
 
-<!-- essay-illustration:4 --><figure class="essay-illustration is-portrait"><img src="/images/essays/book-04.webp" srcset="/images/essays/book-04-small.webp 480w, /images/essays/book-04.webp 1024w" sizes="(max-width: 384px) calc(100vw - 44px), 340px" width="1024" height="1536" alt="여러 갈래 길 앞에서 먼 풍경을 바라보는 사람을 그린 삽화" loading="eager" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
-
 돌이켜 보면 어릴 때부터 지금처럼 미래를 걱정한 적은 별로 없었다. 무슨 일을 해야 먹고살 수 있을지, 어떤 기술이 유망하고 무엇을 공부해야 뒤처지지 않을지 깊이 생각하기보다는 당장 재미있는 일을 찾아다녔다. 나중에 그것들이 어떻게 연결될지 미리 계산하지 않았다. 당시에는 내 앞에 여러 길이 있고 무엇을 하든 어떻게든 먹고살 수 있을 것이라는 막연한 자신감이 있었다.
 
 그 자신감이 얼마나 합리적인 것이었는지는 모르겠다. 운이 좋았을 수도 있고, 주변에서 받은 도움을 충분히 의식하지 못했을 수도 있다. 이미 지나간 삶은 선택들이 서로 연결되어 보이지만, 당시에는 어느 일이 어떻게 이어질지 알지 못했다. 지나고 나서야 한때 흥미로워서 시작했던 일들이 지금의 일과 생활을 이루는 데 도움이 되었다는 사실을 알게 되었다.
@@ -43,6 +41,8 @@ legacyUrl: "/writing/still-we-live-tomorrow/"
 
 나는 아이들이 그런 시간을 가질 수 있었으면 좋겠다. 무엇을 좋아하는지 아직 모른다면 이것저것 해보고, 하다가 재미없으면 다른 것을 찾아볼 수 있는 시간 말이다. 공부를 잘하는 일이 중요하다면 열심히 공부할 수도 있고, 음악과 그림이 더 즐겁다면 그쪽에 시간을 쓸 수도 있다. 중요한 것은 그런 선택이 반드시 평생의 직업과 수입을 결정해야 하는 시험처럼 느껴지지 않았으면 한다는 것이다.
 
+<!-- essay-illustration:4 --><figure class="essay-illustration is-portrait"><img src="/images/essays/book-04.webp" srcset="/images/essays/book-04-small.webp 480w, /images/essays/book-04.webp 1024w" sizes="(max-width: 384px) calc(100vw - 44px), 340px" width="1024" height="1536" alt="여러 갈래 길 앞에서 먼 풍경을 바라보는 사람을 그린 삽화" loading="lazy" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
+
 하지만 아이들에게 자신감을 가지라고 말하는 것만으로 충분하지는 않다. 어떻게든 먹고살 수 있다는 믿음은 실제 세계와 너무 동떨어져 있으면 쉽게 무너진다. 아무리 능력이 있어도 일자리를 구할 수 없고 실패하면 생활의 기반을 잃는 사회라면 낙관은 오래 지속되기 어렵다. 자녀에게 물려주고 싶은 것은 마음가짐만이 아니라 그 마음가짐이 어느 정도 현실에서 작동할 수 있는 조건이다.
 
 여기서 내 어린 시절과 아이들의 미래를 단순히 비교할 수 없다는 사실도 인정해야 한다. 다른 시대를 살았고, 부모와 자녀의 환경은 다르다. 지금 내가 누리는 편리함과 기회 가운데는 예전 세대가 갖지 못했던 것도 많다. 그럼에도 자녀가 자신이 좋아하는 일을 시도할 용기를 갖고, 그 시도가 뜻대로 되지 않더라도 다른 길을 찾을 수 있기를 바라는 마음은 크게 다르지 않을 것 같다.
@@ -63,11 +63,11 @@ legacyUrl: "/writing/still-we-live-tomorrow/"
 
 ## 돈을 받지 않는 피아노
 
-<!-- essay-illustration:8 --><figure class="essay-illustration is-vignette"><img src="/images/essays/book-08.webp" srcset="/images/essays/book-08-small.webp 480w, /images/essays/book-08.webp 1024w" sizes="(max-width: 464px) calc(100vw - 44px), 420px" width="1024" height="512" alt="피아노를 연주하는 사람을 그린 상상 속 장면" loading="lazy" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
-
 아이들이 장차 반드시 큰 성취를 이루기를 바라는 것은 아니다. 그러나 무언가를 해내는 즐거움은 알았으면 좋겠다. 성취가 삶의 의무가 아니라 즐거움의 일부였으면 한다. 남에게 증명하기 위해서가 아니라 자신이 좋아서 시작한 일에서 조금씩 나아가는 경험 말이다.
 
 아무도 돈을 내고 들으러 오지 않는 피아노 연주를 생각해 보자. 처음에는 한 소절도 제대로 연주하기 어려웠지만 몇 주를 연습해 끝내 하나의 곡을 연주할 수 있게 되었다고 해보자. 공연장도 없고 관객도 없고 상장도 없다. 그러나 연주하는 사람은 어제 못하던 일을 오늘 해냈다는 사실에 기쁨을 느낄 수 있다.
+
+<!-- essay-illustration:8 --><figure class="essay-illustration is-vignette"><img src="/images/essays/book-08.webp" srcset="/images/essays/book-08-small.webp 480w, /images/essays/book-08.webp 1024w" sizes="(max-width: 464px) calc(100vw - 44px), 420px" width="1024" height="512" alt="피아노를 연주하는 사람을 그린 상상 속 장면" loading="lazy" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
 
 그림도 마찬가지다. 누군가 돈을 주고 사지 않을 그림을 하루 종일 그릴 수 있다. 머릿속에 떠오른 색과 모양을 캔버스에 옮기는 동안 몇 번이나 마음에 들지 않아 고쳐 그릴 것이다. 완성된 작품은 다른 사람이 보기에 특별하지 않을지도 모른다. 그래도 만드는 과정이 즐거웠고 결과를 볼 때마다 뿌듯하다면 그 시간이 낭비였다고 말할 필요는 없다.
 

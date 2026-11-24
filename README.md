@@ -18,7 +18,7 @@ For every new essay or substantial revision, read [EDITORIAL_GUIDE.md](EDITORIAL
 
 Write new articles as Markdown under `src/content/blog/` and push to `main`. GitHub Actions builds and deploys the website.
 
-The first long-form article is preserved at `public/essays/why-we-work/index.html` as the original standalone HTML edition.
+The first long-form article keeps its standalone HTML edition at `public/writing/why-we-work/index.html`. Its former `/essays/why-we-work/` address redirects in the browser, preserving query strings and section anchors. Its reaction slug is unchanged.
 
 ## Illustrated standalone essays
 
@@ -33,6 +33,15 @@ illustrations to both Markdown and HTML and adds accessible landmarks and image
 metadata. Both commands are repeatable; the film renderer invokes enrichment after
 rendering so regeneration retains these improvements. Shared reading styles live in
 `public/reading.css`. The sitemap includes the new illustration URLs.
+
+`cover` selects the sharing thumbnail independently of the inline placement.
+`coverAfter` and each vignette's `after` identify a unique sentence in a reviewed
+paragraph: illustrations follow that whole paragraph, never interrupt it or precede
+the opening prose. All inline book images are lazy-loaded. The first essay's Markdown
+is only a link stub, so its illustrations belong to the full HTML edition.
+`public/reading-nav.js` marks the current original TOC link; mobile shortcuts link
+back to that same TOC and the article list, and work without JavaScript.
+`tests/sharing-baseline.json` preserves the metadata from `af03c62` exactly.
 
 `tests/reading.test.mjs` checks the original text and TOC against a baseline from
 commit `ac2c949`, along with links, image files and metadata. When the author explicitly
@@ -115,3 +124,10 @@ Its single source is `books/vol1/manuscript.md`; metadata, illustrations, editor
 history, and print production notes live alongside it. See
 [book production](books/vol1/PRODUCTION.md). The original ten standalone essay
 pages and reaction data remain unchanged.
+
+The restored web book renders the final manuscript in full without JavaScript.
+`?mode=ebook` enables chapter-by-chapter reading, previous/next navigation, adjustable
+type and three backgrounds. Reading position and appearance are stored only in the
+reader’s browser. Desktop TOC and mobile collapsible TOC share the same anchors.
+`npm run build` verifies all 748 final manuscript blocks, 16 illustrations, book
+anchors and the migrated sitemap against the published HTML.

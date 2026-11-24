@@ -9,6 +9,23 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = json.loads((ROOT / 'src/data/essay-illustrations.json').read_text())
 FIGURE = re.compile(r'<!-- essay-illustration:.*?<!-- /essay-illustration -->', re.S)
 HEAD = re.compile(r'<!-- reading-metadata -->.*?<!-- /reading-metadata -->', re.S)
+NAV = re.compile(r'<!-- reading-navigation -->.*?<!-- /reading-navigation -->', re.S)
+
+def place_html(page, anchor, illustration):
+    start, end = page.index('<main'), page.index('</main>')
+    main = page[start:end]
+    matches = [m for m in re.finditer(r'<p\b[^>]*>.*?</p>', main, re.S)
+               if anchor in html.unescape(re.sub(r'<[^>]+>', '', m[0]))]
+    assert len(matches) == 1, ('Illustration paragraph must be unique', anchor)
+    pos = start + matches[0].end()
+    return page[:pos] + illustration + page[pos:]
+
+def place_markdown(md, anchor, illustration):
+    paragraphs = list(re.finditer(r'[^\n]+(?:\n(?!\n)[^\n]+)*', md))
+    matches = [m for m in paragraphs if anchor in m[0]]
+    assert len(matches) == 1, ('Illustration paragraph must be unique', anchor)
+    pos = matches[0].end()
+    return md[:pos] + '\n\n' + illustration + md[pos:]
 
 def figure(asset_id, vignette=False):
     a = DATA['assets'][asset_id]
@@ -19,18 +36,19 @@ def figure(asset_id, vignette=False):
         f'srcset="{a["small"]} {a["smallWidth"]}w, {a["src"]} {a["width"]}w" '
         f'sizes="(max-width: {size + 44}px) calc(100vw - 44px), {size}px" '
         f'width="{a["width"]}" height="{a["height"]}" alt="{html.escape(a["alt"], quote=True)}" '
-        f'loading="{"lazy" if vignette else "eager"}" decoding="async">'
+        'loading="lazy" decoding="async">'
         '<figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption>'
         '</figure><!-- /essay-illustration -->')
 
 def enhance(slug):
     settings = DATA['posts'][slug]
-    directory = 'essays' if slug == 'why-we-work' else 'writing'
+    directory = 'writing'
     path = ROOT / f'public/{directory}/{slug}/index.html'
     page = path.read_text()
     # Generated additions can be replaced without touching original prose.
     page = FIGURE.sub('', page)
     page = HEAD.sub('', page)
+    page = NAV.sub('', page)
     page = page.replace('<main>', '<main id="article" tabindex="-1">', 1)
     page = page.replace('<main id="article">', '<main id="article" tabindex="-1">', 1)
     assert '<main id="article" tabindex="-1">' in page, slug
@@ -41,11 +59,14 @@ def enhance(slug):
     page = page.replace('<div class="progress" id="progress">', '<div class="progress" id="progress" aria-hidden="true">')
     # Existing dialogue labels are subordinate to the conversation heading (h2).
     page = re.sub(r'(<div class="dialogue-pair">)<h4>(.*?)</h4>', r'\1<h3>\2</h3>', page)
-    page = page.replace('<main id="article" tabindex="-1">', '<main id="article" tabindex="-1">' + figure(settings['cover']), 1)
+    page = place_html(page, settings['coverAfter'], figure(settings['cover']))
     for item in settings['vignettes']:
-        heading = '<h2>' + item['heading'] + '</h2>'
-        assert page.count(heading) == 1, (slug, heading)
-        page = page.replace(heading, heading + figure(item['asset'], True), 1)
+        page = place_html(page, item['after'], figure(item['asset'], True))
+    page = page.replace('<nav class="toc" aria-label="글 목차">', '<nav class="toc" aria-label="글 목차" id="reading-toc" tabindex="-1">')
+    navigation = ('<!-- reading-navigation --><nav class="reading-shortcuts" aria-label="읽기 바로가기">'
+        '<a href="/">글 목록</a><a href="#reading-toc">목차로 이동</a></nav>'
+        '<script src="/reading-nav.js" defer></script><!-- /reading-navigation -->')
+    page = page.replace('</body>', navigation + '</body>', 1)
     a = DATA['assets'][settings['cover']]
     image_url = 'https://mino.co.kr' + a['social']
     alt = html.escape(a['alt'], quote=True)
@@ -71,15 +92,13 @@ def enhance(slug):
     md = md_path.read_text()
     # Separate blocks use only our explicit markers; all authored lines stay in place.
     md = re.sub(r'\n\n<!-- essay-illustration:.*?<!-- /essay-illustration -->', '', md, flags=re.S)
-    front_end = md.index('\n---', 3) + 4
-    md = md[:front_end] + '\n\n' + figure(settings['cover']) + md[front_end:]
+    # This manuscript is only a link stub; its full edition is the HTML above.
+    if slug == 'why-we-work' and not re.search(r'^## ', md, flags=re.M):
+        md_path.write_text(md)
+        return
+    md = place_markdown(md, settings['coverAfter'], figure(settings['cover']))
     for item in settings['vignettes']:
-        heading = '## ' + item['heading']
-        # The first essay's Markdown is intentionally only a link to its HTML edition.
-        if slug == 'why-we-work' and not re.search(r'^## ', md, flags=re.M):
-            continue
-        assert len(re.findall(r'^' + re.escape(heading) + r'$', md, flags=re.M)) == 1, (slug, heading)
-        md = re.sub(r'^' + re.escape(heading) + r'$', lambda m: m[0] + '\n\n' + figure(item['asset'], True), md, count=1, flags=re.M)
+        md = place_markdown(md, item['after'], figure(item['asset'], True))
     md_path.write_text(md)
 
 if __name__ == '__main__':

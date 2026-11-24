@@ -7,8 +7,6 @@ draft: false
 legacyUrl: "/writing/does-humanity-need-to-work/"
 ---
 
-<!-- essay-illustration:11 --><figure class="essay-illustration"><img src="/images/essays/book-11.webp" srcset="/images/essays/book-11-small.webp 480w, /images/essays/book-11.webp 1280w" sizes="(max-width: 664px) calc(100vw - 44px), 620px" width="1280" height="853" alt="유리 칸막이 너머 컴퓨터 앞에서 일하는 사람들이 있는 일터의 삽화" loading="eager" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
-
 대학원에 다닐 때 연구실 동료들이 계산 프로그램을 쓰는 모습을 보며 답답했던 적이 있다. 당시 연구실에서 사용하던 소재 계산 프로그램은 입력 파일을 준비하고 실행 결과를 해석하는 데 제법 많은 손이 갔다. 계산 자체를 연구하는 사람이 아니라면 이런 작업은 연구의 본론에 들어가기 전에 치러야 하는 통행료에 가까웠다. 컴퓨터에 익숙하지 않은 동료들이 입력 파일을 쉽게 준비하고 결과를 분석할 수 있도록 간단한 웹 인터페이스를 만들었다.
 
 처음부터 회사를 만들거나 연구의 미래를 바꾸려던 일은 아니었다. 주변 사람이 불편해하니 그것을 줄여 주고 싶었다. 그런데 도구를 만드는 일이 연구 자체보다 더 재미있었다. 나중에 웹 기반 시뮬레이션 플랫폼을 필요로 하던 연구기관의 사업과 연결되면서, 그때 만든 도구는 예상하지 못한 진로의 출발점이 되었다. 돌이켜 보면 나는 다른 사람의 번거로운 노동을 줄이는 일을 직업으로 삼은 셈이다.
@@ -24,6 +22,8 @@ AI가 인간보다 정확한 문서를 쓰고, 오류가 적은 코드를 만들
 그러나 이 설명은 경제의 문턱에서 곧 막힌다. 사랑하는 아이의 피아노 연주를 듣는 사람도 병원에서 받는 검사 결과나 다리의 구조 계산에서는 가능한 한 오류가 없기를 원한다. 인간의 불완전함을 사랑할 이유와 그 불완전함에 비용을 지불할 이유는 다르다. 음악을 좋아하는 사람은 많지만 음악으로 생활비를 버는 사람은 그보다 적다. 좋아서 하는 일과 누군가 돈을 지불하는 일 사이에는 시장이라는 문턱이 있다.
 
 사람의 책임과 판단만큼은 남는다는 반론도 있다. 누군가는 AI가 낸 결론을 승인하고 그 결과에 책임져야 한다. 그러나 열 사람이 하던 업무를 한 사람이 감독하게 된다면 책임이 남는다는 사실만으로 나머지 아홉 사람의 월급이 유지되지는 않는다. AI가 사람을 단숨에 모두 대체한다는 예측 역시 성급하다. 2024년 IMF는 세계 고용의 약 40퍼센트가 AI의 영향에 노출되어 있다고 분석했지만, 노출은 일자리 소멸과 같은 뜻이 아니다. 일부 업무는 기계가 대신하고 일부는 사람의 생산성을 높일 것이다. 여러 직업의 미래는 그 둘이 어떤 비율로 섞이느냐에 따라 달라진다.
+
+<!-- essay-illustration:11 --><figure class="essay-illustration"><img src="/images/essays/book-11.webp" srcset="/images/essays/book-11-small.webp 480w, /images/essays/book-11.webp 1280w" sizes="(max-width: 664px) calc(100vw - 44px), 620px" width="1280" height="853" alt="유리 칸막이 너머 컴퓨터 앞에서 일하는 사람들이 있는 일터의 삽화" loading="lazy" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
 
 그런데 이 전망이 낙관적이든 비관적이든 남는 질문이 있다. 우리가 오랫동안 당연하게 여긴 등식, 곧 일한다는 것과 생존할 자격을 얻는다는 것은 앞으로도 반드시 함께 가야 할까. 인간에게 남을 직업을 찾는 대신, 인간이 반드시 직업을 가져야만 살아갈 수 있는 이유를 물어야 하는 것은 아닐까.
 
@@ -65,13 +65,13 @@ AI가 인간보다 정확한 문서를 쓰고, 오류가 적은 코드를 만들
 
 ## 부자가 된 사회가 모두를 부자로 만드는가
 
-<!-- essay-illustration:12 --><figure class="essay-illustration is-vignette"><img src="/images/essays/book-12.webp" srcset="/images/essays/book-12-small.webp 480w, /images/essays/book-12.webp 1280w" sizes="(max-width: 464px) calc(100vw - 44px), 420px" width="1280" height="853" alt="금화와 하트가 양쪽 접시에 놓인 저울로 풍요와 행복을 표현한 삽화" loading="lazy" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
-
 자동화가 충분히 발전하면 사회 전체가 더 많은 것을 만들 수 있을 것이다. 그럼 사람들은 지금보다 적게 일해도 되지 않을까. 가능한 일이다. 그러나 한 사람이 동시에 두 집에 살 수 없고, 모든 사람이 가장 전망 좋은 바닷가 땅을 소유할 수도 없다. 물건의 총량이 늘어나는 것과 모두가 원하는 특정 재화의 부족이 사라지는 것은 다르다.
 
 AI가 거의 비용 없이 소프트웨어나 보고서를 생산할 수 있게 되어도 주택의 위치, 전력망, 광물과 토지, 타인의 집중적인 돌봄에는 여전히 제약이 있다. 로봇이 건물을 더 빠르게 지어도 도심의 교통과 교육 시설, 이웃과의 관계는 곧바로 복제되지 않는다. 병원에서 진단 업무의 일부를 자동화해도 희귀한 수술 장비와 의료 인력의 시간에는 제약이 남는다. 풍요라는 말을 쓰려면 무엇이 풍부해지는지부터 구체적으로 말해야 한다.
 
 그렇다고 물질적인 풍요가 무의미한 것은 아니다. 물과 전기, 기본 식품, 이동과 통신의 비용이 줄어들면 사람은 지금보다 적은 돈으로 괜찮은 삶을 살 수 있다. 개인이 매번 가격을 지불하지 않는 재화도 이미 존재한다. 도서관에서 책을 빌리고 공원에 들어갈 때 우리는 개별 거래를 하지 않는다. 그것은 비용이 전혀 없어서가 아니라 사회가 세금과 규칙, 시설 운영을 통해 공동 접근을 가능하게 했기 때문이다.
+
+<!-- essay-illustration:12 --><figure class="essay-illustration is-vignette"><img src="/images/essays/book-12.webp" srcset="/images/essays/book-12-small.webp 480w, /images/essays/book-12.webp 1280w" sizes="(max-width: 464px) calc(100vw - 44px), 420px" width="1280" height="853" alt="금화와 하트가 양쪽 접시에 놓인 저울로 풍요와 행복을 표현한 삽화" loading="lazy" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
 
 이런 접근권을 더 넓히자는 생각을 보편적 기본서비스라고 부르기도 한다. 주거·의료·교육·교통처럼 생활을 지탱하는 것에 대한 최소한의 접근을 제도로 보장하는 방식이다. 반면 기본소득은 사용처를 정하지 않은 현금을 지급해 개인이 필요에 따라 선택하도록 한다. 현금은 자유로운 선택을 돕지만 공급이 부족한 주택시장에서 가격만 밀어 올릴 위험이 있을 수 있다. 서비스는 접근을 보장하지만 공급이 획일적이거나 행정권력이 과도해질 수 있다. 어느 방식이 모든 상황에 더 낫다고 선언하기보다는, 무엇을 충분히 만들 수 있고 무엇이 여전히 부족한지에 따라 조합을 달리할 수 있다.
 
@@ -151,5 +151,5 @@ AI가 생산의 상당 부분을 담당하는 사회가 온다고 해도 사람�
 - [János Kornai의 부족경제 연구에 관한 학술 검토](https://doi.org/10.1093/cje/beaa056) — 부족 경제, 가격 왜곡과 연성예산제약.
 - [핀란드 Kela, 기본소득 실험 평가](https://tietotarjotin.fi/en/information-package/158070/basic-income-experiment) — 2017~2018년 실험과 결과.
 - [Jones & Marinescu, Alaska Permanent Fund 연구 (NBER)](https://www.nber.org/papers/w24312) — 보편적 현금 배당과 고용.
-- [《우리는 무엇을 위해 일해왔는가》](/essays/why-we-work/) — 기술과 노동, 인간의 성취.
+- [《우리는 무엇을 위해 일해왔는가》](/writing/why-we-work/) — 기술과 노동, 인간의 성취.
 - [《아이들은 무엇을 위해 공부하는가》](/writing/why-children-study/) — 미래의 준비와 오늘의 자유.

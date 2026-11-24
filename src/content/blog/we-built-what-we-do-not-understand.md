@@ -7,8 +7,6 @@ draft: false
 legacyUrl: "/writing/we-built-what-we-do-not-understand/"
 ---
 
-<!-- essay-illustration:5 --><figure class="essay-illustration is-portrait"><img src="/images/essays/book-05.webp" srcset="/images/essays/book-05-small.webp 480w, /images/essays/book-05.webp 1024w" sizes="(max-width: 384px) calc(100vw - 44px), 340px" width="1024" height="1536" alt="작업대에서 사람과 로봇이 모형과 설계도를 함께 살펴보는 삽화" loading="eager" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
-
 요즘 AI의 도움을 받아 소프트웨어를 만드는 일을 시도하고 있다. 전에는 코드를 직접 작성하거나 다른 개발자들과 오랜 시간 논의하던 일을, 이제는 말로 설명하고 결과를 확인하는 방식으로 진행할 때가 있다. 새로운 도구 덕분에 시도할 수 있는 일이 늘었지만 모든 과정을 내가 충분히 이해한다고 말하기는 어렵다. 내 관심은 특정 프로그램의 성능보다 그것을 만드는 방식이 달라지며 생긴 질문에 있다.
 
 나는 필요한 기능을 설명하고 AI가 작성한 코드를 살펴본다. 예상대로 작동하지 않으면 무엇이 문제인지 묻고 수정 결과를 다시 확인한다. 어떤 날에는 일을 빨리 마치지만 다른 날에는 같은 부분에서 오래 막힌다. 실제로 일어난 일을 설명할 수 있는 범위와 내가 원하는 결과를 얻었다는 사실 사이에는 차이가 있다. 그 차이를 어느 정도까지 받아들여도 될지는 아직 잘 모르겠다.
@@ -52,6 +50,8 @@ AI가 제안한 여행 일정표를 떠올려 보자. 경로와 시간표가 자
 
 설명을 듣고 납득하는 것과 실제로 옳은 결과를 얻는 것도 언제나 일치하지 않을 수 있다. 나는 이 문제를 과학의 본질에 관한 주장으로 확대하고 싶지는 않다. 그보다는 좋은 도구를 손에 넣었을 때 내가 무엇을 더 알고 싶어 하는지 살펴보고 싶다. 어떤 날에는 결과가 중요하고 어떤 날에는 과정을 배우는 일이 더 즐겁다. 둘 중 하나만 올바른 태도라고 정할 이유는 없어 보인다.
 
+<!-- essay-illustration:5 --><figure class="essay-illustration is-portrait"><img src="/images/essays/book-05.webp" srcset="/images/essays/book-05-small.webp 480w, /images/essays/book-05.webp 1024w" sizes="(max-width: 384px) calc(100vw - 44px), 340px" width="1024" height="1536" alt="작업대에서 사람과 로봇이 모형과 설계도를 함께 살펴보는 삽화" loading="lazy" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
+
 AI의 도움으로 답을 얻는 일이 쉬워진다면, 스스로 배우고 싶은 마음은 어떻게 바뀔까. 궁금한 것을 더 쉽게 탐색하게 될 수도 있다. 반대로 예전 같으면 오랫동안 붙잡았을 문제를 너무 빨리 넘겨 버릴 수도 있다. 미래를 예측하려는 말보다 지금 내가 언제 답을 받아들이고 언제 다시 묻는지 관찰하는 편이 정확할 것 같다.
 ## 궁금해하는 일은 남을까
 
@@ -76,11 +76,11 @@ AI가 코드를 작성하는 모습을 보면 언젠가는 내가 직접 코딩�
 편리한 도구를 오래 사용하는 것이 반드시 문제는 아닐 것이다. 덕분에 다른 일을 배우거나 새로운 시도를 할 수도 있다. 다만 도구를 사용할 수 없는 날이 온다면 어떤 일을 다시 배워야 할까. 그것은 사회 전체가 기술을 잃는다는 주장이 아니라, 내가 무엇을 계속 할 줄 알고 싶은지에 관한 작은 질문이다.
 ## 시험을 통과한 기술의 바깥
 
-<!-- essay-illustration:13 --><figure class="essay-illustration is-vignette"><img src="/images/essays/book-13.webp" srcset="/images/essays/book-13-small.webp 480w, /images/essays/book-13.webp 1280w" sizes="(max-width: 464px) calc(100vw - 44px), 420px" width="1280" height="853" alt="원자 모형과 결정을 통해 재료 연구를 표현한 삽화" loading="lazy" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
-
 기술을 시험한다는 것은 언제나 어떤 상황을 가정한다는 뜻이다. 특정 온도에서 부품이 견디는지, 주어진 입력에서 올바른 출력을 내는지, 반복적인 사용에서 허용 범위의 결과가 유지되는지 확인한다. 엄격한 시험일수록 유용한 근거가 늘어난다. 하지만 시험하지 않은 환경까지 자동으로 안전해지는 것은 아니다.
 
 AI가 설계한 소재와 AI가 외부 시스템의 도구를 사용하며 스스로 행동을 선택하는 상황을 비교해 보자. 둘 다 검증이 필요하지만 검증하는 방법은 다르다. 소재에도 예상하지 못한 파괴가 있을 수 있고, 행동하는 AI에도 특정 입력에서만 나타나는 문제가 있을 수 있다. 후자는 연결된 장치와 사용자의 지시, 환경의 변화에 따라 실제 행동의 범위가 달라질 수 있다. 무엇을 시험해야 하는지 정의하는 일부터 어려워진다.
+
+<!-- essay-illustration:13 --><figure class="essay-illustration is-vignette"><img src="/images/essays/book-13.webp" srcset="/images/essays/book-13-small.webp 480w, /images/essays/book-13.webp 1280w" sizes="(max-width: 464px) calc(100vw - 44px), 420px" width="1280" height="853" alt="원자 모형과 결정을 통해 재료 연구를 표현한 삽화" loading="lazy" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
 
 이를테면 AI가 작성한 보고서의 문장을 또 다른 AI에게 검사하게 할 수 있다. 표현이 부자연스럽거나 숫자가 앞뒤에서 달라지는 오류는 비교적 쉽게 찾을지도 모른다. 그러나 원래 질문을 잘못 정의했다면 두 시스템이 같은 방향으로 그럴듯한 답을 내놓을 수 있다. 검사자가 무엇이 문제인지 모르는 상황에서는 오류를 찾는 도구의 성능만 높인다고 그 위험이 사라지지는 않는다. 반대로 모든 부분을 직접 검토하려 한다면 AI를 사용해 얻으려던 시간의 이익이 줄어들 수 있다.
 

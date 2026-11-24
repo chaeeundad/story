@@ -26,14 +26,23 @@ main { min-width:0; }
 .floating { display:grid;place-items:center; }
 .chapter a,.notes a,.prose a { text-decoration:underline;text-underline-offset:.2em; }
 .chapter,.chapter blockquote,main,[id] { scroll-margin-top:28px; }
-.essay-illustration { width:100%;max-width:620px;margin:0 auto 48px;break-inside:avoid; }
+.chapter .essay-illustration { width:100%;max-width:620px;margin:36px auto 48px;break-inside:avoid; }
 .essay-illustration img { display:block;width:100%;height:auto;border-radius:3px; }
-.essay-illustration.is-portrait { max-width:340px; }
+.chapter .essay-illustration.is-portrait { max-width:340px; }
 .chapter .essay-illustration.is-vignette { max-width:420px;margin:30px auto 40px; }
 .essay-illustration figcaption { margin-top:10px;text-align:center;font:12px/1.8 system-ui,sans-serif;color:#59635e; }
 .chapter .essay-illustration figcaption { font-size:12px; }
 img { max-width:100%; }
+.toc a[aria-current="location"] { background:#edf3ef;color:#234f43;box-shadow:-3px 0 #285f51; }
+.toc a:hover { color:#234f43;text-decoration:underline;text-underline-offset:4px; }
+.reading-shortcuts { display:none; }
 @media(max-width:850px) {
+  body:has(.reading-shortcuts) { padding-bottom:90px; }
+  .reading-shortcuts { display:flex;position:fixed;left:22px;bottom:calc(22px + env(safe-area-inset-bottom, 0px));z-index:20;background:#fff;border:1px solid #c4cec7;border-radius:8px;box-shadow:0 2px 10px #233c2812;font:14px/1.5 system-ui,sans-serif; }
+  .reading-shortcuts a { display:flex;align-items:center;min-height:44px;padding:0 14px;color:#285f51;text-decoration:none; }
+  .reading-shortcuts a+a { border-left:1px solid #dce4de; }
+  .reading-shortcuts a:focus-visible { outline-offset:-3px; }
+  .floating { bottom:calc(22px + env(safe-area-inset-bottom, 0px)); }
   .toc a { display:block;margin:0;padding:8px 0;min-height:44px; }
   .toc a span { display:inline;margin-right:10px; }
   .essay-illustration { margin-bottom:36px; }
@@ -51,8 +60,10 @@ img { max-width:100%; }
   .reader-response-button,.actions button { border:1px solid ButtonText; }
 }
 @media print {
+  .reading-shortcuts { display:none!important; }
+  body:has(.reading-shortcuts) { padding-bottom:0; }
   .skip-link,.skip { display:none!important; }
-  .essay-illustration { max-width:110mm;margin:10mm auto; }
-  .essay-illustration.is-portrait { max-width:65mm; }
+  .chapter .essay-illustration { max-width:110mm;margin:10mm auto; }
+  .chapter .essay-illustration.is-portrait { max-width:65mm; }
   .chapter .essay-illustration.is-vignette { max-width:85mm; }
 }

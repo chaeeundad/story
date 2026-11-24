@@ -1,0 +1,38 @@
+---
+import {Content, getHeadings} from '../../../../books/vol1/manuscript.md';
+import book from '../../../../books/vol1/book.json';
+const headings = getHeadings().filter((h: {depth:number; text:string}) => h.depth === 2);
+const structured = {'@context':'https://schema.org','@type':'Book',name:book.title,alternativeHeadline:book.subtitle,
+ author:{'@type':'Person',name:book.author},inLanguage:'ko',genre:book.genre,url:book.url,
+ image:'https://mino.co.kr/images/essays/book-09.jpg'};
+---
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>{book.title} — {book.author}</title><meta name="description" content={book.subtitle}/>
+<link rel="canonical" href={book.url}/><meta name="robots" content="index, follow, max-image-preview:large"/>
+<meta property="og:type" content="book"/><meta property="og:locale" content="ko_KR"/>
+<meta property="og:title" content={book.title}/><meta property="og:description" content={book.subtitle}/>
+<meta property="og:url" content={book.url}/><meta property="og:image" content="https://mino.co.kr/images/essays/book-09.jpg"/>
+<meta property="og:image:alt" content="밤하늘을 바라보며 생각하는 사람의 삽화"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<script type="application/ld+json" set:html={JSON.stringify(structured).replace(/</g,'\\u003c')}/>
+<link rel="stylesheet" href="/book.css"/>
+</head><body>
+<a class="skip-link" href="#book-text">본문으로 건너뛰기</a>
+<header class="site-nav"><a class="brand" href="/">mino.</a><nav aria-label="주 메뉴"><a href="/">글</a><a href="/books/vol1/" aria-current="page">책</a><a href="/about/">소개</a></nav></header>
+<div class="book-tools" id="book-tools" hidden>
+ <div class="tool-group"><button type="button" id="reader-mode" aria-pressed="false">이북 모드</button><button type="button" id="reader-resume" hidden>이어서 읽기</button><a href="#book-toc" id="reader-toc">차례</a></div>
+ <div class="tool-group"><button type="button" id="font-down" aria-label="글자 작게">가−</button><output id="font-size" aria-label="글자 크기">19px</output><button type="button" id="font-up" aria-label="글자 크게">가＋</button><label for="reader-theme">배경</label><select id="reader-theme"><option value="paper">종이</option><option value="white">밝게</option><option value="night">어둡게</option></select></div>
+</div>
+<main class="book-layout">
+ <aside class="book-sidebar"><details id="book-toc" open><summary>책 차례</summary><nav aria-label="책 차례"><p class="book-kicker">세 부 · 열 개의 질문</p><ol>{headings.map((h:{slug:string;text:string})=><li class:list={{part:h.text.startsWith('제')}}><a href={`#${h.slug}`}>{h.text}</a></li>)}</ol></nav></details></aside>
+ <div class="book-reading">
+  <p class="reader-status" id="reader-status" role="status" hidden></p>
+  <article id="book-text" class="book-text" tabindex="-1" aria-label={book.title}><Content/></article>
+  <nav class="chapter-controls" aria-label="장 이동" hidden><button type="button" id="chapter-prev">← 이전 장</button><span id="chapter-position"></span><button type="button" id="chapter-next">다음 장 →</button></nav>
+  <footer class="book-colophon"><p>{book.title} · {book.author} 지음</p><p>{book.writingDisclosure}</p><p>삽화는 창작 장면이며 실제 저자나 가족의 기록이 아닙니다.</p><a href="#book-toc">차례로 돌아가기</a> · <a href="/">독립 에세이 읽기</a></footer>
+ </div>
+</main>
+<script src="/book-reader.js" defer></script>
+</body></html>

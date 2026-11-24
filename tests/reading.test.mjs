@@ -4,6 +4,11 @@ import {readFileSync, existsSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 const baseline = JSON.parse(readFileSync('tests/reading-baseline.json', 'utf8'));
 const manifest = JSON.parse(readFileSync('src/data/essay-illustrations.json', 'utf8'));
+const sharing = JSON.parse(readFileSync('tests/sharing-baseline.json', 'utf8'));
+const removeNavigation = value => value.replace(/<!-- reading-navigation -->.*?<!-- \/reading-navigation -->/gs, '');
+// The author explicitly approved this URL migration; compare all other bytes as before.
+const originalUrls = value => value.replaceAll('/writing/why-we-work/', '/essays/why-we-work/');
+const currentPath = value => value.replace('/essays/why-we-work/', '/writing/why-we-work/');
 const hash = value => createHash('sha256').update(value).digest('hex');
 const removeFigures = value => value.replace(/<!-- essay-illustration:.*?<!-- \/essay-illustration -->/gs, '');
 const text = value => value.replace(/<script\b[^>]*>.*?<\/script>|<style\b[^>]*>.*?<\/style>/gs, '')
@@ -13,8 +18,8 @@ const attr = (tag, name) => tag.match(new RegExp(`\\b${name}="([^"]*)"`))?.[1];
 const decode = value => value?.replace(/&(?:amp|lt|gt|quot|apos|#39|#x27);/g, entity=>({'&amp;':'&','&lt;':'<','&gt;':'>','&quot;':'"','&apos;':"'",'&#39;':"'",'&#x27;':"'"}[entity]));
 for (const [slug, before] of Object.entries(baseline)) {
   test(`${slug}: original prose, metadata-derived text and left table of contents are preserved`, () => {
-    const html = readFileSync(before.html, 'utf8');
-    const md = readFileSync(before.markdown, 'utf8').replace(/\n\n<!-- essay-illustration:.*?<!-- \/essay-illustration -->/gs, '');
+    const html = originalUrls(removeNavigation(readFileSync(currentPath(before.html), 'utf8')));
+    const md = originalUrls(readFileSync(before.markdown, 'utf8')).replace(/\n\n<!-- essay-illustration:.*?<!-- \/essay-illustration -->/gs, '');
     assert.equal(hash(md), before.markdownSha256, 'Authored Markdown must not change');
     assert.equal(hash(text(removeFigures(html))), before.visibleTextSha256, 'Existing rendered text must not change');
     const toc = html.match(/<nav class="toc"[^>]*>(.*?)<\/nav>/s)?.[1];
@@ -35,7 +40,7 @@ for (const [slug, before] of Object.entries(baseline)) {
     assert.doesNotMatch(html, /cloudflareinsights\.com/, 'Only edge-injected analytics');
   });
   test(`${slug}: discoverable, responsive illustrations have valid metadata and local files`, () => {
-    const html = readFileSync(before.html, 'utf8');
+    const html = readFileSync(currentPath(before.html), 'utf8');
     const config = manifest.posts[slug];
     assert.equal((html.match(/<!-- essay-illustration:/g)||[]).length, 1 + config.vignettes.length);
     for (const [tag] of html.matchAll(/<img\b[^>]*>/g)) {
@@ -51,5 +56,32 @@ for (const [slug, before] of Object.entries(baseline)) {
     assert.ok(existsSync(`public${cover.social}`));
     assert.match(html, /property="og:image"/);
     assert.match(html, /name="twitter:card" content="summary_large_image"/);
+    assert.deepEqual(originalUrls(html).match(/<meta\b[^>]*>/g), sharing[slug].metadata, 'Sharing metadata stays identical apart from the approved URL migration');
+    assert.equal(originalUrls(html).match(/<script type="application\/ld\+json">.*?<\/script>/s)[0], sharing[slug].jsonLd);
+    const main = html.match(/<main\b[^>]*>(.*?)<\/main>/s)[1];
+    assert.doesNotMatch(main, /^\s*<!-- essay-illustration:/, 'Start with prose, not a cover illustration');
+    const placements = [{asset:config.cover, after:config.coverAfter}, ...config.vignettes];
+    for (const item of placements) {
+      const marker = `<!-- essay-illustration:${item.asset} -->`;
+      const preceding = main.slice(0, main.indexOf(marker));
+      assert.match(preceding, /<\/p>$/, 'Place artwork after a complete paragraph');
+      assert.ok(preceding.includes(item.after), 'Use the reviewed paragraph');
+      assert.ok(preceding.lastIndexOf('<section') > preceding.lastIndexOf('</section>'), 'Keep artwork inside the chapter');
+      const next = main.slice(main.indexOf(marker)).split('<!-- /essay-illustration -->')[1];
+      assert.match(next, /^\s*<p\b/, 'Continue prose after the illustration');
+    }
+    assert.equal((html.match(/<!-- reading-navigation -->/g)||[]).length, 1);
+    assert.match(html, /id="reading-toc" tabindex="-1"/);
+    assert.match(html, /href="#reading-toc"/);
+    assert.match(html, /src="\/reading-nav.js" defer/);
   });
 }
+test('first essay keeps its legacy entry point and reaction identity', () => {
+  const redirect = readFileSync('public/essays/why-we-work/index.html','utf8');
+  assert.match(redirect, /location\.replace\('\/writing\/why-we-work\/'\+location.search\+location.hash\)/);
+  assert.match(redirect, /rel="canonical" href="https:\/\/mino.co.kr\/writing\/why-we-work\/"/);
+  assert.doesNotMatch(redirect, /reaction-like/);
+  const essay = readFileSync('public/writing/why-we-work/index.html','utf8');
+  assert.doesNotMatch(essay, /\/essays\/why-we-work\//);
+  assert.match(essay, /src="\/reactions.js"/);
+});

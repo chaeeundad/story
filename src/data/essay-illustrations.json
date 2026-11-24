@@ -167,69 +167,85 @@
       "vignettes": [
         {
           "asset": "10",
-          "heading": "기억을 맡긴 최초의 기계"
+          "heading": "기억을 맡긴 최초의 기계",
+          "after": "기억은 개인의 능력에서 공동체가 관리하는 자산으로 조금씩 바뀌었다."
         }
-      ]
+      ],
+      "coverAfter": "AI가 빼앗은 즐거움과 AI가 새롭게 준 즐거움이 같은 사람 안에 공존한다."
     },
     "why-children-study": {
       "cover": "3",
-      "vignettes": []
+      "vignettes": [],
+      "coverAfter": "자기 목표를 세우고 결과를 확인할 수 있는 다른 종류의 일이다."
     },
     "why-go-fishing": {
       "cover": "1",
-      "vignettes": []
+      "vignettes": [],
+      "coverAfter": "그 사이에서 나는 내가 하는 선택이 결과에 영향을 준다는 감각을 즐기는 것 같다."
     },
     "does-humanity-need-to-work": {
       "cover": "11",
       "vignettes": [
         {
           "asset": "12",
-          "heading": "부자가 된 사회가 모두를 부자로 만드는가"
+          "heading": "부자가 된 사회가 모두를 부자로 만드는가",
+          "after": "그것은 비용이 전혀 없어서가 아니라 사회가 세금과 규칙, 시설 운영을 통해 공동 접근을 가능하게 했기 때문이다."
         }
-      ]
+      ],
+      "coverAfter": "여러 직업의 미래는 그 둘이 어떤 비율로 섞이느냐에 따라 달라진다."
     },
     "we-built-what-we-do-not-understand": {
       "cover": "5",
       "vignettes": [
         {
           "asset": "13",
-          "heading": "시험을 통과한 기술의 바깥"
+          "heading": "시험을 통과한 기술의 바깥",
+          "after": "무엇을 시험해야 하는지 정의하는 일부터 어려워진다."
         }
-      ]
+      ],
+      "coverAfter": "둘 중 하나만 올바른 태도라고 정할 이유는 없어 보인다."
     },
     "why-we-still-build": {
       "cover": "2",
-      "vignettes": []
+      "vignettes": [],
+      "coverAfter": "더 많은 사람이 검토할 수 있도록 한계와 문제를 공개하는 일도 개발의 일부일 것이다."
     },
     "when-we-accept-the-world-we-made": {
       "cover": "14",
-      "vignettes": []
+      "vignettes": [],
+      "coverAfter": "진짜 선택권이 있으려면 대안과 결과를 어느 정도 이해하고, 문제를 제기할 방법이 필요하다."
     },
     "why-we-need-each-other": {
       "cover": "16",
-      "vignettes": []
+      "vignettes": [],
+      "coverAfter": "함께 무언가를 하는 즐거움과, 아무것도 하지 않아도 누군가가 곁에 있다는 편안함은 다른 경험이다."
     },
     "let-me-live-my-own-life": {
       "cover": "7",
       "vignettes": [
         {
           "asset": "15",
-          "heading": "아무도 읽지 않는 글"
+          "heading": "아무도 읽지 않는 글",
+          "after": "나에게 의미가 있다는 사실을 누군가에게 먼저 증명할 필요는 없다고 생각한다."
         }
-      ]
+      ],
+      "coverAfter": "그날이 좋았다면 그것으로 충분한 이유가 될 수 있다."
     },
     "still-we-live-tomorrow": {
       "cover": "4",
       "vignettes": [
         {
           "asset": "8",
-          "heading": "돈을 받지 않는 피아노"
+          "heading": "돈을 받지 않는 피아노",
+          "after": "그러나 연주하는 사람은 어제 못하던 일을 오늘 해냈다는 사실에 기쁨을 느낄 수 있다."
         }
-      ]
+      ],
+      "coverAfter": "중요한 것은 그런 선택이 반드시 평생의 직업과 수입을 결정해야 하는 시험처럼 느껴지지 않았으면 한다는 것이다."
     },
     "the-future-we-already-quoted": {
       "cover": "9",
-      "vignettes": []
+      "vignettes": [],
+      "coverAfter": "그 흐름이 내가 하려던 말과 맞는지 읽는 시간이 따로 필요했다."
     }
   }
 }

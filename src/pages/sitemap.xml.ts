@@ -7,6 +7,7 @@ const art = illustrations as {posts: Record<string, {cover: string; vignettes: {
 const urls: {loc: string; lastmod?: string; images?: string[]}[]=[
  {loc:'https://mino.co.kr/'},
  {loc:'https://mino.co.kr/about/'},
+ {loc:'https://mino.co.kr/books/vol1/'},
  ...posts.map(p=>({loc:new URL(p.data.legacyUrl??`/writing/${p.id}/`,'https://mino.co.kr').href,lastmod:p.data.pubDate.toISOString().slice(0,10),
   images: art.posts[p.id] ? [art.posts[p.id].cover, ...art.posts[p.id].vignettes.map(v=>v.asset)].map(id=>new URL(art.assets[id].src,'https://mino.co.kr').href) : []}))
 ];

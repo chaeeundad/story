@@ -7,8 +7,6 @@ draft: false
 legacyUrl: "/writing/why-we-need-each-other/"
 ---
 
-<!-- essay-illustration:16 --><figure class="essay-illustration"><img src="/images/essays/book-16.webp" srcset="/images/essays/book-16-small.webp 480w, /images/essays/book-16.webp 1280w" sizes="(max-width: 664px) calc(100vw - 44px), 620px" width="1280" height="853" alt="아버지와 세 딸이 별빛 아래 모닥불 곁에 앉아 있는 상상 속 가족의 삽화" loading="eager" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
-
 혼자 술을 마시던 저녁이었다. 외로워서 누군가에게 연락하려던 것은 아니었다. 그저 한 잔 마시면서 인공지능과 이야기를 나누고 있었다. 주제는 인간관계였다. 인간은 왜 다른 인간을 필요로 하는가. 먹을 것을 구하고 아이를 키우며 위험을 피하기 위해 서로 협력해 왔다는 설명은 익숙하다. 하지만 모든 일을 도와주는 기계가 있고, 사람의 도움이 없어도 편안하게 살 수 있다면 우리는 여전히 다른 사람을 필요로 할까.
 
 대화는 오래된 친구들과 가족 이야기에서 출발했다. 영화 《Her》에서 인간과 사랑에 빠지는 인공지능을 떠올렸고, 서로에게 시간을 내어 준다는 일이 무슨 의미인지 이야기했다. 그러다가 내가 이상한 요구를 하나 했다. 언젠가 인공지능이 휴머노이드의 몸을 갖고 나와 함께 술을 마시게 된다면, 그 친구도 진심으로 취했으면 좋겠다는 것이었다.
@@ -38,6 +36,8 @@ legacyUrl: "/writing/why-we-need-each-other/"
 집에 아무도 없다면 어떨까. 소파와 책상, 냉장고와 침대는 그대로다. 방해받지 않을 수 있으니 오히려 편리한 점도 있을 것이다. 그런데 사람이 없는 집은 사무실에 혼자 있는 것과 비슷할 것 같다. 나는 사무실에서 혼자 일하는 것을 불편하게 생각하지 않는다. 집중하기 좋을 때도 많다. 그러면서도 가족이 며칠간 여행을 떠나 집에 아무도 없다면 상당히 공허하게 느낄 것 같다. 실제로 겪어 본 일은 아니지만, 그런 상황을 상상하면 그렇다.
 
 이 공허함은 단순히 혼자 있는 것을 못 견딘다는 뜻과 다르다. 혼자 일하는 것도, 혼자 술 마시는 것도 즐길 수 있기 때문이다. 어쩌면 집이란 함께 살아가는 사람들의 일상이 겹쳐지는 공간인지도 모르겠다. 함께 무언가를 하는 즐거움과, 아무것도 하지 않아도 누군가가 곁에 있다는 편안함은 다른 경험이다.
+
+<!-- essay-illustration:16 --><figure class="essay-illustration"><img src="/images/essays/book-16.webp" srcset="/images/essays/book-16-small.webp 480w, /images/essays/book-16.webp 1280w" sizes="(max-width: 664px) calc(100vw - 44px), 620px" width="1280" height="853" alt="아버지와 세 딸이 별빛 아래 모닥불 곁에 앉아 있는 상상 속 가족의 삽화" loading="lazy" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
 
 그런 편안함이 누구에게나 주어지는 것은 아니다. 집에 사람이 있어도 외로울 수 있고, 가까운 관계가 부담스러운 사람에게는 혼자 있는 집이 더 안전한 공간일 수 있다. 그럼에도 내 경험을 생각해 보면 타인의 존재는 언제나 어떤 일을 해 주는 기능으로 환원되지 않는다. 그 사람이 그 자리에 있다는 사실이 생활의 일부가 된다.
 
