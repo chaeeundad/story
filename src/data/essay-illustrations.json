@@ -1,0 +1,235 @@
+{
+  "assets": {
+    "1": {
+      "source": "books/vol1/illustrations/new/01_fishing_process_over_result.png",
+      "alt": "물가의 나무 데크에서 해질녘 낚시를 즐기는 사람을 그린 삽화",
+      "src": "/images/essays/book-01.webp",
+      "small": "/images/essays/book-01-small.webp",
+      "social": "/images/essays/book-01.jpg",
+      "width": 1280,
+      "height": 853,
+      "smallWidth": 480
+    },
+    "2": {
+      "source": "books/vol1/illustrations/new/02_human_ai_building_trust.png",
+      "alt": "사람과 작은 로봇이 함께 무언가를 만드는 상징적인 삽화",
+      "src": "/images/essays/book-02.webp",
+      "small": "/images/essays/book-02-small.webp",
+      "social": "/images/essays/book-02.jpg",
+      "width": 1280,
+      "height": 853,
+      "smallWidth": 480
+    },
+    "3": {
+      "source": "books/vol1/illustrations/new/03_childrens_education_and_imagination.png",
+      "alt": "책상 앞 두 아이가 별자리와 로봇, 여러 가능성을 상상하는 삽화",
+      "src": "/images/essays/book-03.webp",
+      "small": "/images/essays/book-03-small.webp",
+      "social": "/images/essays/book-03.jpg",
+      "width": 1280,
+      "height": 853,
+      "smallWidth": 480
+    },
+    "4": {
+      "source": "books/vol1/illustrations/new/04_unmapped_future_paths.png",
+      "alt": "여러 갈래 길 앞에서 먼 풍경을 바라보는 사람을 그린 삽화",
+      "src": "/images/essays/book-04.webp",
+      "small": "/images/essays/book-04-small.webp",
+      "social": "/images/essays/book-04.jpg",
+      "width": 1024,
+      "height": 1536,
+      "smallWidth": 480
+    },
+    "5": {
+      "source": "books/vol1/illustrations/new/05_human_ai_collaboration.png",
+      "alt": "작업대에서 사람과 로봇이 모형과 설계도를 함께 살펴보는 삽화",
+      "src": "/images/essays/book-05.webp",
+      "small": "/images/essays/book-05-small.webp",
+      "social": "/images/essays/book-05.jpg",
+      "width": 1024,
+      "height": 1536,
+      "smallWidth": 480
+    },
+    "6": {
+      "source": "books/vol1/illustrations/new/06_work_creativity.png",
+      "alt": "책과 설계도가 놓인 책상에서 사람과 로봇이 함께 작업하는 삽화",
+      "src": "/images/essays/book-06.webp",
+      "small": "/images/essays/book-06-small.webp",
+      "social": "/images/essays/book-06.jpg",
+      "width": 1024,
+      "height": 512,
+      "smallWidth": 480
+    },
+    "7": {
+      "source": "books/vol1/illustrations/new/07_leisure_coastal_ride.png",
+      "alt": "해안 길에서 자전거를 타는 사람을 그린 삽화",
+      "src": "/images/essays/book-07.webp",
+      "small": "/images/essays/book-07-small.webp",
+      "social": "/images/essays/book-07.jpg",
+      "width": 1024,
+      "height": 512,
+      "smallWidth": 480
+    },
+    "8": {
+      "source": "books/vol1/illustrations/new/08_piano_intrinsic_achievement.png",
+      "alt": "피아노를 연주하는 사람을 그린 상상 속 장면",
+      "src": "/images/essays/book-08.webp",
+      "small": "/images/essays/book-08-small.webp",
+      "social": "/images/essays/book-08.jpg",
+      "width": 1024,
+      "height": 512,
+      "smallWidth": 480
+    },
+    "9": {
+      "source": "books/vol1/illustrations/new/09_night_thinking-print.png",
+      "alt": "밤하늘과 도시의 불빛을 바라보며 생각하는 사람을 그린 삽화",
+      "src": "/images/essays/book-09.webp",
+      "small": "/images/essays/book-09-small.webp",
+      "social": "/images/essays/book-09.jpg",
+      "width": 1280,
+      "height": 853,
+      "smallWidth": 480
+    },
+    "10": {
+      "source": "books/vol1/illustrations/new/10_evolution_of_knowledge-print.png",
+      "alt": "점토판과 책, 인쇄기, 컴퓨터와 AI로 이어지는 지식 도구의 삽화",
+      "src": "/images/essays/book-10.webp",
+      "small": "/images/essays/book-10-small.webp",
+      "social": "/images/essays/book-10.jpg",
+      "width": 1280,
+      "height": 853,
+      "smallWidth": 480
+    },
+    "11": {
+      "source": "books/vol1/illustrations/new/11_shared_workplace-print.png",
+      "alt": "유리 칸막이 너머 컴퓨터 앞에서 일하는 사람들이 있는 일터의 삽화",
+      "src": "/images/essays/book-11.webp",
+      "small": "/images/essays/book-11-small.webp",
+      "social": "/images/essays/book-11.jpg",
+      "width": 1280,
+      "height": 853,
+      "smallWidth": 480
+    },
+    "12": {
+      "source": "books/vol1/illustrations/new/12_production_and_wellbeing-print.png",
+      "alt": "금화와 하트가 양쪽 접시에 놓인 저울로 풍요와 행복을 표현한 삽화",
+      "src": "/images/essays/book-12.webp",
+      "small": "/images/essays/book-12-small.webp",
+      "social": "/images/essays/book-12.jpg",
+      "width": 1280,
+      "height": 853,
+      "smallWidth": 480
+    },
+    "13": {
+      "source": "books/vol1/illustrations/new/13_materials_research-print.png",
+      "alt": "원자 모형과 결정을 통해 재료 연구를 표현한 삽화",
+      "src": "/images/essays/book-13.webp",
+      "small": "/images/essays/book-13-small.webp",
+      "social": "/images/essays/book-13.jpg",
+      "width": 1280,
+      "height": 853,
+      "smallWidth": 480
+    },
+    "14": {
+      "source": "books/vol1/illustrations/new/14_choice_and_uncertainty-print.png",
+      "alt": "배낭을 멘 사람이 산과 갈림길 표지판을 바라보는 삽화",
+      "src": "/images/essays/book-14.webp",
+      "small": "/images/essays/book-14-small.webp",
+      "social": "/images/essays/book-14.jpg",
+      "width": 1280,
+      "height": 853,
+      "smallWidth": 480
+    },
+    "15": {
+      "source": "books/vol1/illustrations/new/15_writing_while_raining-print.png",
+      "alt": "비 내리는 창가에 책과 찻잔, 따뜻한 조명이 놓인 삽화",
+      "src": "/images/essays/book-15.webp",
+      "small": "/images/essays/book-15-small.webp",
+      "social": "/images/essays/book-15.jpg",
+      "width": 1280,
+      "height": 853,
+      "smallWidth": 480
+    },
+    "16": {
+      "source": "books/vol1/illustrations/new/16_father_and_three_daughters-print.png",
+      "alt": "아버지와 세 딸이 별빛 아래 모닥불 곁에 앉아 있는 상상 속 가족의 삽화",
+      "src": "/images/essays/book-16.webp",
+      "small": "/images/essays/book-16-small.webp",
+      "social": "/images/essays/book-16.jpg",
+      "width": 1280,
+      "height": 853,
+      "smallWidth": 480
+    }
+  },
+  "posts": {
+    "why-we-work": {
+      "cover": "6",
+      "vignettes": [
+        {
+          "asset": "10",
+          "heading": "기억을 맡긴 최초의 기계"
+        }
+      ]
+    },
+    "why-children-study": {
+      "cover": "3",
+      "vignettes": []
+    },
+    "why-go-fishing": {
+      "cover": "1",
+      "vignettes": []
+    },
+    "does-humanity-need-to-work": {
+      "cover": "11",
+      "vignettes": [
+        {
+          "asset": "12",
+          "heading": "부자가 된 사회가 모두를 부자로 만드는가"
+        }
+      ]
+    },
+    "we-built-what-we-do-not-understand": {
+      "cover": "5",
+      "vignettes": [
+        {
+          "asset": "13",
+          "heading": "시험을 통과한 기술의 바깥"
+        }
+      ]
+    },
+    "why-we-still-build": {
+      "cover": "2",
+      "vignettes": []
+    },
+    "when-we-accept-the-world-we-made": {
+      "cover": "14",
+      "vignettes": []
+    },
+    "why-we-need-each-other": {
+      "cover": "16",
+      "vignettes": []
+    },
+    "let-me-live-my-own-life": {
+      "cover": "7",
+      "vignettes": [
+        {
+          "asset": "15",
+          "heading": "아무도 읽지 않는 글"
+        }
+      ]
+    },
+    "still-we-live-tomorrow": {
+      "cover": "4",
+      "vignettes": [
+        {
+          "asset": "8",
+          "heading": "돈을 받지 않는 피아노"
+        }
+      ]
+    },
+    "the-future-we-already-quoted": {
+      "cover": "9",
+      "vignettes": []
+    }
+  }
+}

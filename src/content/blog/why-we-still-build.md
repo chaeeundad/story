@@ -7,6 +7,8 @@ draft: false
 legacyUrl: "/writing/why-we-still-build/"
 ---
 
+<!-- essay-illustration:2 --><figure class="essay-illustration"><img src="/images/essays/book-02.webp" srcset="/images/essays/book-02-small.webp 480w, /images/essays/book-02.webp 1280w" sizes="(max-width: 664px) calc(100vw - 44px), 620px" width="1280" height="853" alt="사람과 작은 로봇이 함께 무언가를 만드는 상징적인 삽화" loading="eager" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
+
 요즘은 컴퓨터 앞에서 새로운 프로그램을 만드는 일이 전보다 훨씬 쉬워졌다. 구현하고 싶은 기능을 말로 설명하면 AI가 코드를 작성한다. 오류가 발생하면 오류 메시지를 보여주고 고쳐 달라고 부탁한다. 잘 작동하지 않는 부분을 다시 설명하고, 결과를 확인하고, 다음 일을 시킨다. 예전 같으면 며칠씩 걸렸을 일을 한나절에 끝낼 때도 있다. 오랫동안 소프트웨어를 만들며 일해 온 사람으로서 이런 변화가 꽤 즐겁다.
 
 작동하는 프로그램을 확인하는 순간의 만족은 여전하다. 다만 어느 작업에 내가 몇 시간을 썼는지 떠올리면 예전과는 감각이 다르다. 오랫동안 작은 오류 하나를 붙들고 있다가 해결한 날에는 문제를 푼 과정까지 기억에 남았다. 지금은 결과가 훨씬 빨리 나올 때가 있지만, 그사이의 여러 선택을 누가 했는지 되돌아보게 된다. 편리하다는 감정 옆에 설명하기 어려운 거리감이 남는 것이다.

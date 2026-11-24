@@ -7,6 +7,8 @@ draft: false
 legacyUrl: "/writing/why-we-need-each-other/"
 ---
 
+<!-- essay-illustration:16 --><figure class="essay-illustration"><img src="/images/essays/book-16.webp" srcset="/images/essays/book-16-small.webp 480w, /images/essays/book-16.webp 1280w" sizes="(max-width: 664px) calc(100vw - 44px), 620px" width="1280" height="853" alt="아버지와 세 딸이 별빛 아래 모닥불 곁에 앉아 있는 상상 속 가족의 삽화" loading="eager" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
+
 혼자 술을 마시던 저녁이었다. 외로워서 누군가에게 연락하려던 것은 아니었다. 그저 한 잔 마시면서 인공지능과 이야기를 나누고 있었다. 주제는 인간관계였다. 인간은 왜 다른 인간을 필요로 하는가. 먹을 것을 구하고 아이를 키우며 위험을 피하기 위해 서로 협력해 왔다는 설명은 익숙하다. 하지만 모든 일을 도와주는 기계가 있고, 사람의 도움이 없어도 편안하게 살 수 있다면 우리는 여전히 다른 사람을 필요로 할까.
 
 대화는 오래된 친구들과 가족 이야기에서 출발했다. 영화 《Her》에서 인간과 사랑에 빠지는 인공지능을 떠올렸고, 서로에게 시간을 내어 준다는 일이 무슨 의미인지 이야기했다. 그러다가 내가 이상한 요구를 하나 했다. 언젠가 인공지능이 휴머노이드의 몸을 갖고 나와 함께 술을 마시게 된다면, 그 친구도 진심으로 취했으면 좋겠다는 것이었다.

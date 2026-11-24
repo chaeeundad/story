@@ -7,6 +7,8 @@ draft: false
 legacyUrl: "/writing/why-go-fishing/"
 ---
 
+<!-- essay-illustration:1 --><figure class="essay-illustration"><img src="/images/essays/book-01.webp" srcset="/images/essays/book-01-small.webp 480w, /images/essays/book-01.webp 1280w" sizes="(max-width: 664px) calc(100vw - 44px), 620px" width="1280" height="853" alt="물가의 나무 데크에서 해질녘 낚시를 즐기는 사람을 그린 삽화" loading="eager" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
+
 낚싯대를 들고 바다에 가는 사람은 물고기를 구하러 가는 것일까. 그렇게 물으면 대답이 조금 이상해진다. 시장에 가면 물고기가 있다. 시간과 장비에 들어가는 비용까지 계산하면 그편이 대체로 편하고 확실하다. 더 많은 물고기를 얻으려는 것이 목적이라면 개인의 낚싯대는 전문 어선과 경쟁할 수 없다. 그런데도 요즘 나는 낚시가 재미있다. 물고기가 필요한 것도 아닌데 물고기를 잡으러 간다.
 
 낚시의 어떤 부분이 좋은지 설명하기는 생각보다 쉽다. 어디에 물고기가 있을지 짐작하고, 채비를 정하고, 미끼를 던진 뒤 기다린다. 아무 일도 일어나지 않으면 미끼를 바꿔 볼 수도 있고, 내 판단을 의심할 수도 있다. 운이 좋으면 입질이 오고, 운이 없으면 빈손으로 돌아온다. 사 먹으면 없앨 수 있는 불확실성을 굳이 찾아 나서는 셈이다. 그 불확실성이 때로는 낚시를 낚시답게 만든다.

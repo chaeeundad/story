@@ -7,6 +7,8 @@ draft: false
 legacyUrl: "/writing/why-children-study/"
 ---
 
+<!-- essay-illustration:3 --><figure class="essay-illustration"><img src="/images/essays/book-03.webp" srcset="/images/essays/book-03-small.webp 480w, /images/essays/book-03.webp 1280w" sizes="(max-width: 664px) calc(100vw - 44px), 620px" width="1280" height="853" alt="책상 앞 두 아이가 별자리와 로봇, 여러 가능성을 상상하는 삽화" loading="eager" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
+
 밤이 깊었는데도 아이들의 숙제는 끝나지 않았다. 세 딸은 학원에서 받아 온 문제를 풀고 있다. 부모가 된 뒤에는 아이들이 열심히 공부하는 모습을 보는 일에도 두 가지 감정이 동시에 생긴다. 성실하게 자기 일을 해내는 모습이 기특하다가도, 오늘 이 시간을 꼭 이렇게 보내야 할까 싶은 마음이 든다. 어른인 내가 하루의 일을 마친 뒤 쉬고 싶은 것처럼 아이들에게도 쉬고 싶은 밤이 있을 것이다. 그런데 아이들의 하루는 학교가 끝난 뒤에도 쉽게 끝나지 않는다.
 
 몇 년 뒤의 세상에 이 아이들이 어떤 일을 하며 살지 알 수 없다. 지금부터 여섯 해에서 열 해가 지나면 인공지능은 얼마나 많은 일을 하게 될까. 우리가 미래에 유용할 것이라고 믿는 지식 가운데 얼마나 많은 부분이 그때도 인간에게 필요할까. 이런 질문을 떠올리는 일은 어렵지 않다. 그러나 그 질문에 따라 오늘 밤의 숙제를 줄이자고 결정하는 일은 전혀 다르다. 자녀의 미래에 책임을 느끼는 부모는 먼 미래의 가능성보다 내일의 시험과 다음 학기의 성적에 더 쉽게 붙들린다.

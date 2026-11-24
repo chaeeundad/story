@@ -7,6 +7,8 @@ draft: false
 legacyUrl: "/writing/when-we-accept-the-world-we-made/"
 ---
 
+<!-- essay-illustration:14 --><figure class="essay-illustration"><img src="/images/essays/book-14.webp" srcset="/images/essays/book-14-small.webp 480w, /images/essays/book-14.webp 1280w" sizes="(max-width: 664px) calc(100vw - 44px), 620px" width="1280" height="853" alt="배낭을 멘 사람이 산과 갈림길 표지판을 바라보는 삽화" loading="eager" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
+
 출근길에 유튜브를 보다가 문득 생각이 하나 떠올랐다. 지금 사람들은 인공지능을 이용해 생산성을 높이려고 한다. 코드를 빨리 작성하고, 자료를 정리하고, 복잡한 계산을 돕고, 이전에는 여러 사람이 해야 했던 일을 혼자서 처리하기도 한다. 회사에서는 이런 변화를 대체로 효율의 향상이라고 부른다. 그런데 같은 도구를 범죄자가 사용하지 않을 이유가 있을까.
 
 어떤 기술이 널리 사용되기 시작하면 그것을 좋은 목적에만 쓰는 사람들로 세상이 채워지는 것은 아니다. 통신 기술은 사람들을 연결하지만 사기와 기만에도 쓰인다. 자동차는 이동의 자유를 넓혀 주지만 범죄와 사고에도 얽힌다. 도구가 가진 능력은 사용자의 목적에 따라 다른 결과를 낳을 수 있다. 그렇다고 역사상의 모든 도구가 반드시 범죄에 쓰였다고 말할 수는 없지만, AI의 악용 가능성을 생산성 향상과 별개의 일로 취급하기도 어려워 보였다.

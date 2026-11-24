@@ -7,6 +7,8 @@ draft: false
 legacyUrl: "/writing/still-we-live-tomorrow/"
 ---
 
+<!-- essay-illustration:4 --><figure class="essay-illustration is-portrait"><img src="/images/essays/book-04.webp" srcset="/images/essays/book-04-small.webp 480w, /images/essays/book-04.webp 1024w" sizes="(max-width: 384px) calc(100vw - 44px), 340px" width="1024" height="1536" alt="여러 갈래 길 앞에서 먼 풍경을 바라보는 사람을 그린 삽화" loading="eager" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
+
 돌이켜 보면 어릴 때부터 지금처럼 미래를 걱정한 적은 별로 없었다. 무슨 일을 해야 먹고살 수 있을지, 어떤 기술이 유망하고 무엇을 공부해야 뒤처지지 않을지 깊이 생각하기보다는 당장 재미있는 일을 찾아다녔다. 나중에 그것들이 어떻게 연결될지 미리 계산하지 않았다. 당시에는 내 앞에 여러 길이 있고 무엇을 하든 어떻게든 먹고살 수 있을 것이라는 막연한 자신감이 있었다.
 
 그 자신감이 얼마나 합리적인 것이었는지는 모르겠다. 운이 좋았을 수도 있고, 주변에서 받은 도움을 충분히 의식하지 못했을 수도 있다. 이미 지나간 삶은 선택들이 서로 연결되어 보이지만, 당시에는 어느 일이 어떻게 이어질지 알지 못했다. 지나고 나서야 한때 흥미로워서 시작했던 일들이 지금의 일과 생활을 이루는 데 도움이 되었다는 사실을 알게 되었다.
@@ -60,6 +62,8 @@ legacyUrl: "/writing/still-we-live-tomorrow/"
 물론 이런 조건을 누가 어떤 방식으로 마련해야 하는지는 쉽지 않은 문제다. 사회적 합의가 필요하고, 그 과정에는 비용과 갈등이 따를 것이다. 기술 발전으로 모든 문제가 자동으로 해결된다는 보장은 없다. 바로 그래서 회사에서 한 명의 신입을 채용할지 고민하는 오늘의 일이 아이들이 살아갈 제도의 문제와 이어진다.
 
 ## 돈을 받지 않는 피아노
+
+<!-- essay-illustration:8 --><figure class="essay-illustration is-vignette"><img src="/images/essays/book-08.webp" srcset="/images/essays/book-08-small.webp 480w, /images/essays/book-08.webp 1024w" sizes="(max-width: 464px) calc(100vw - 44px), 420px" width="1024" height="512" alt="피아노를 연주하는 사람을 그린 상상 속 장면" loading="lazy" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
 
 아이들이 장차 반드시 큰 성취를 이루기를 바라는 것은 아니다. 그러나 무언가를 해내는 즐거움은 알았으면 좋겠다. 성취가 삶의 의무가 아니라 즐거움의 일부였으면 한다. 남에게 증명하기 위해서가 아니라 자신이 좋아서 시작한 일에서 조금씩 나아가는 경험 말이다.
 

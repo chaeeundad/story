@@ -30,7 +30,9 @@ def render(s):
  out=[]
  for p in re.split(r'\n\s*\n',s.strip()):
   if not p.strip():continue
-  if p.startswith('>'):
+  if p.startswith('<!-- essay-illustration:') and p.endswith('<!-- /essay-illustration -->'):
+   out.append(p)
+  elif p.startswith('>'):
    lines=[re.sub(r'^> ?', '',x) for x in p.splitlines()]
    quote=lines[0];attribution=' '.join(x for x in lines[1:] if x)
    film_name=re.search(r'《([^》]+)》',attribution)[1]
@@ -70,4 +72,6 @@ page=f'''<!doctype html>
 dest=ROOT/f'public/writing/{SLUG}/index.html'
 dest.parent.mkdir(parents=True,exist_ok=True)
 dest.write_text(page)
+import subprocess, sys
+subprocess.run([sys.executable, str(ROOT/'scripts/enhance-essays.py'), '--slug', SLUG], check=True)
 print(f'Built {dest.relative_to(ROOT)}; {len(films)} credited film images; {len(md)} manuscript characters')

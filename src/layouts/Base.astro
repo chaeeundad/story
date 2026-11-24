@@ -1,5 +1,13 @@
 ---
 import '../styles/global.css';
+interface Props {
+ title?: string;
+ description?: string;
+ type?: 'website' | 'article';
+ publishedTime?: string;
+ tags?: string[];
+ author?: string;
+}
 const {
   title='mino. — 아직 생각 중입니다.',
   description='기술과 과학, 역사와 사회에 대한 질문을 기록하는 개인 서재. AI와의 대화에서 출발한 생각들을 긴 글로 정리합니다.',
@@ -52,10 +60,11 @@ const jsonLd = type==='article' ? {
 {type==='article' && tags.map(tag=><meta property="article:tag" content={tag}/>)}
 <script type="application/ld+json" set:html={JSON.stringify(jsonLd).replace(/</g,'\\u003c')} />
 <title>{title}</title>
+<link rel="stylesheet" href="/reading.css" />
 
 </head>
-<body><div class="wrap">
+<body><a class="skip-link" href="#main-content">본문으로 건너뛰기</a><div class="wrap">
 <header class="nav"><a class="brand" href="/">mino.</a><nav aria-label="주 메뉴" class="navlinks"><a href="/">글</a><a href="/about/">소개</a></nav></header>
-<slot/>
+<main id="main-content" tabindex="-1"><slot/></main>
 <footer class="footer">© {new Date().getFullYear()} mino. · 생각하고, 질문하고, 기록합니다.</footer>
 </div></body></html>

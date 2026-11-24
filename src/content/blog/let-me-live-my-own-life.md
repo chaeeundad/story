@@ -7,6 +7,8 @@ draft: false
 legacyUrl: "/writing/let-me-live-my-own-life/"
 ---
 
+<!-- essay-illustration:7 --><figure class="essay-illustration"><img src="/images/essays/book-07.webp" srcset="/images/essays/book-07-small.webp 480w, /images/essays/book-07.webp 1024w" sizes="(max-width: 664px) calc(100vw - 44px), 620px" width="1024" height="512" alt="해안 길에서 자전거를 타는 사람을 그린 삽화" loading="eager" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
+
 아이들과 함께 게임을 하나 만든다고 상상해 보았다. 규칙을 정하고, 해보니 재미없는 부분은 바꾸고, 예상하지 못한 방법으로 아이들이 이기기 시작하면 또 규칙을 고친다. 완성된 게임이 다른 집 아이들에게는 별로 재미없을 수도 있다. 그보다 훨씬 정교한 게임이 이미 세상에 있을 수도 있다. 그래도 우리끼리 웃으며 시간을 보냈다면 그것으로 충분하지 않을까.
 
 이런 이야기를 하게 된 이유는 인공지능 때문이었다. 인공지능이 점점 더 많은 일을 해내는 모습을 보면서 인간이 앞으로 무엇을 할 수 있을지, 그러면 인간에게는 어떤 가치가 남을지 생각하고 있었다. 처음에는 인류의 특별함을 어디에서 찾아야 하는지 묻기 시작했다. 지능과 언어, 창의성과 기술처럼 인간을 다른 존재와 구별하는 근거들이 떠올랐다.
@@ -76,6 +78,8 @@ legacyUrl: "/writing/let-me-live-my-own-life/"
 그렇게 생각하니 부모가 자녀에게 가르쳐 줄 수 있는 것의 범위도 조금 달라 보였다. 무엇이 행복인지 정답을 주기보다 다양한 일을 접하게 하고, 좋아하는 것을 찾아볼 기회를 주고, 그 선택이 언제든 바뀔 수 있다는 사실을 알려 주는 일. 부모로서 그것이 충분한지 여전히 자신은 없지만, 적어도 아이에게 누군가의 성적표를 인생의 목적이라고 가르치고 싶지는 않다.
 
 ## 아무도 읽지 않는 글
+
+<!-- essay-illustration:15 --><figure class="essay-illustration is-vignette"><img src="/images/essays/book-15.webp" srcset="/images/essays/book-15-small.webp 480w, /images/essays/book-15.webp 1280w" sizes="(max-width: 464px) calc(100vw - 44px), 420px" width="1280" height="853" alt="비 내리는 창가에 책과 찻잔, 따뜻한 조명이 놓인 삽화" loading="lazy" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
 
 나는 지금 이런 생각들을 글로 정리하고 있다. 그런데 이 글을 아무도 읽지 않는다고 해도 크게 상관없을 것 같다. 물론 누군가 읽고 재미있어하거나 공감해 준다면 반가울 것이다. 하지만 쓰는 이유가 처음부터 독자에게 인정받는 데 있지는 않다. 생각이 어디에서 시작했는지, 대화 도중 무엇이 바뀌었는지, 끝에 어떤 의문이 남았는지를 글로 옮기는 일 자체가 즐겁다.
 

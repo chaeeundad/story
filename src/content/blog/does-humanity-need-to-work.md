@@ -7,6 +7,8 @@ draft: false
 legacyUrl: "/writing/does-humanity-need-to-work/"
 ---
 
+<!-- essay-illustration:11 --><figure class="essay-illustration"><img src="/images/essays/book-11.webp" srcset="/images/essays/book-11-small.webp 480w, /images/essays/book-11.webp 1280w" sizes="(max-width: 664px) calc(100vw - 44px), 620px" width="1280" height="853" alt="유리 칸막이 너머 컴퓨터 앞에서 일하는 사람들이 있는 일터의 삽화" loading="eager" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
+
 대학원에 다닐 때 연구실 동료들이 계산 프로그램을 쓰는 모습을 보며 답답했던 적이 있다. 당시 연구실에서 사용하던 소재 계산 프로그램은 입력 파일을 준비하고 실행 결과를 해석하는 데 제법 많은 손이 갔다. 계산 자체를 연구하는 사람이 아니라면 이런 작업은 연구의 본론에 들어가기 전에 치러야 하는 통행료에 가까웠다. 컴퓨터에 익숙하지 않은 동료들이 입력 파일을 쉽게 준비하고 결과를 분석할 수 있도록 간단한 웹 인터페이스를 만들었다.
 
 처음부터 회사를 만들거나 연구의 미래를 바꾸려던 일은 아니었다. 주변 사람이 불편해하니 그것을 줄여 주고 싶었다. 그런데 도구를 만드는 일이 연구 자체보다 더 재미있었다. 나중에 웹 기반 시뮬레이션 플랫폼을 필요로 하던 연구기관의 사업과 연결되면서, 그때 만든 도구는 예상하지 못한 진로의 출발점이 되었다. 돌이켜 보면 나는 다른 사람의 번거로운 노동을 줄이는 일을 직업으로 삼은 셈이다.
@@ -62,6 +64,8 @@ AI가 인간보다 정확한 문서를 쓰고, 오류가 적은 코드를 만들
 또한 정보를 모두 모을 수 있다는 가정 자체가 위험할 수 있다. 사람은 자신이 원하는 것을 언제나 말로 표현하지 않고, 감시받는 상황에서는 다르게 행동한다. 중앙의 시스템이 오류를 범했을 때 누가 수정할 권한을 갖는지도 중요하다. AI가 훌륭한 계획 도구가 될 가능성과 AI가 계획된 사회를 자동으로 정당화한다는 주장은 구분해야 한다. 과거의 실패를 설명하는 데서 배울 것은 특정 이념에 대한 간단한 조롱보다 생산의 정보, 조직의 유인, 정치권력의 통제라는 서로 다른 조건이다.
 
 ## 부자가 된 사회가 모두를 부자로 만드는가
+
+<!-- essay-illustration:12 --><figure class="essay-illustration is-vignette"><img src="/images/essays/book-12.webp" srcset="/images/essays/book-12-small.webp 480w, /images/essays/book-12.webp 1280w" sizes="(max-width: 464px) calc(100vw - 44px), 420px" width="1280" height="853" alt="금화와 하트가 양쪽 접시에 놓인 저울로 풍요와 행복을 표현한 삽화" loading="lazy" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
 
 자동화가 충분히 발전하면 사회 전체가 더 많은 것을 만들 수 있을 것이다. 그럼 사람들은 지금보다 적게 일해도 되지 않을까. 가능한 일이다. 그러나 한 사람이 동시에 두 집에 살 수 없고, 모든 사람이 가장 전망 좋은 바닷가 땅을 소유할 수도 없다. 물건의 총량이 늘어나는 것과 모두가 원하는 특정 재화의 부족이 사라지는 것은 다르다.
 

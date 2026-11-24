@@ -7,6 +7,8 @@ draft: false
 legacyUrl: "/writing/we-built-what-we-do-not-understand/"
 ---
 
+<!-- essay-illustration:5 --><figure class="essay-illustration is-portrait"><img src="/images/essays/book-05.webp" srcset="/images/essays/book-05-small.webp 480w, /images/essays/book-05.webp 1024w" sizes="(max-width: 384px) calc(100vw - 44px), 340px" width="1024" height="1536" alt="작업대에서 사람과 로봇이 모형과 설계도를 함께 살펴보는 삽화" loading="eager" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
+
 요즘 AI의 도움을 받아 소프트웨어를 만드는 일을 시도하고 있다. 전에는 코드를 직접 작성하거나 다른 개발자들과 오랜 시간 논의하던 일을, 이제는 말로 설명하고 결과를 확인하는 방식으로 진행할 때가 있다. 새로운 도구 덕분에 시도할 수 있는 일이 늘었지만 모든 과정을 내가 충분히 이해한다고 말하기는 어렵다. 내 관심은 특정 프로그램의 성능보다 그것을 만드는 방식이 달라지며 생긴 질문에 있다.
 
 나는 필요한 기능을 설명하고 AI가 작성한 코드를 살펴본다. 예상대로 작동하지 않으면 무엇이 문제인지 묻고 수정 결과를 다시 확인한다. 어떤 날에는 일을 빨리 마치지만 다른 날에는 같은 부분에서 오래 막힌다. 실제로 일어난 일을 설명할 수 있는 범위와 내가 원하는 결과를 얻었다는 사실 사이에는 차이가 있다. 그 차이를 어느 정도까지 받아들여도 될지는 아직 잘 모르겠다.
@@ -73,6 +75,8 @@ AI가 코드를 작성하는 모습을 보면 언젠가는 내가 직접 코딩�
 
 편리한 도구를 오래 사용하는 것이 반드시 문제는 아닐 것이다. 덕분에 다른 일을 배우거나 새로운 시도를 할 수도 있다. 다만 도구를 사용할 수 없는 날이 온다면 어떤 일을 다시 배워야 할까. 그것은 사회 전체가 기술을 잃는다는 주장이 아니라, 내가 무엇을 계속 할 줄 알고 싶은지에 관한 작은 질문이다.
 ## 시험을 통과한 기술의 바깥
+
+<!-- essay-illustration:13 --><figure class="essay-illustration is-vignette"><img src="/images/essays/book-13.webp" srcset="/images/essays/book-13-small.webp 480w, /images/essays/book-13.webp 1280w" sizes="(max-width: 464px) calc(100vw - 44px), 420px" width="1280" height="853" alt="원자 모형과 결정을 통해 재료 연구를 표현한 삽화" loading="lazy" decoding="async"><figcaption>책에 사용한 창작 삽화 · 실제 인물이나 사건의 기록이 아닙니다.</figcaption></figure><!-- /essay-illustration -->
 
 기술을 시험한다는 것은 언제나 어떤 상황을 가정한다는 뜻이다. 특정 온도에서 부품이 견디는지, 주어진 입력에서 올바른 출력을 내는지, 반복적인 사용에서 허용 범위의 결과가 유지되는지 확인한다. 엄격한 시험일수록 유용한 근거가 늘어난다. 하지만 시험하지 않은 환경까지 자동으로 안전해지는 것은 아니다.
 

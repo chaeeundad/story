@@ -20,6 +20,26 @@ Write new articles as Markdown under `src/content/blog/` and push to `main`. Git
 
 The first long-form article is preserved at `public/essays/why-we-work/index.html` as the original standalone HTML edition.
 
+## Illustrated standalone essays
+
+Keep the standalone HTML editions and their desktop left-hand sticky table of contents.
+Do not replace these editions with Astro's generic article template. Astro builds the
+index, about page and sitemap; standalone essays remain the published reading surface.
+
+`src/data/essay-illustrations.json` maps the existing book artwork to each essay.
+`node scripts/prepare-essay-images.mjs` produces uncropped WebP sizes and JPEG sharing
+images from the retained originals. `python3 scripts/enhance-essays.py` applies the
+illustrations to both Markdown and HTML and adds accessible landmarks and image
+metadata. Both commands are repeatable; the film renderer invokes enrichment after
+rendering so regeneration retains these improvements. Shared reading styles live in
+`public/reading.css`. The sitemap includes the new illustration URLs.
+
+`tests/reading.test.mjs` checks the original text and TOC against a baseline from
+commit `ac2c949`, along with links, image files and metadata. When the author explicitly
+approves a later prose edit, review and update the affected baseline hashes rather
+than removing the preservation check. These checks do not replace keyboard, screen
+reader, contrast, mobile layout and visual review.
+
 ## GitHub Pages
 
 Set **Settings → Pages → Source → GitHub Actions**. Configure the custom domain `mino.co.kr` and set DNS records following GitHub's official documentation: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site
