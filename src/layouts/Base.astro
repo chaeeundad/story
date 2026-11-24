@@ -51,7 +51,7 @@ const jsonLd = type==='article' ? {
 {type==='article' && tags.map(tag=><meta property="article:tag" content={tag}/>)}
 <script type="application/ld+json" set:html={JSON.stringify(jsonLd).replace(/</g,'\\u003c')} />
 <title>{title}</title>
-<!-- Cloudflare Web Analytics --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"c004b7eb0d0347e590b5224c76abcd5b"}'></script><!-- End Cloudflare Web Analytics -->
+
 </head>
 <body><div class="wrap">
 <header class="nav"><a class="brand" href="/">mino.</a><nav aria-label="주 메뉴" class="navlinks"><a href="/">글</a><a href="/about/">소개</a></nav></header>
